@@ -602,8 +602,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__astar
-#define __PYX_HAVE_API__astar
+#define __PYX_HAVE__astar_cy
+#define __PYX_HAVE_API__astar_cy
 /* Early includes */
 #ifdef _OPENMP
 #include <omp.h>
@@ -813,20 +813,20 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "astar.py",
+  "astar_cy.pyx",
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_5astar___pyx_scope_struct__main;
+struct __pyx_obj_8astar_cy___pyx_scope_struct__main;
 
-/* "astar.py":197
+/* "astar_cy.pyx":197
  * 
  * 
  * def main(win, width):             # <<<<<<<<<<<<<<
  *     ROWS = 30
  *     grid = make_grid(ROWS, width)
  */
-struct __pyx_obj_5astar___pyx_scope_struct__main {
+struct __pyx_obj_8astar_cy___pyx_scope_struct__main {
   PyObject_HEAD
   long __pyx_v_ROWS;
   PyObject *__pyx_v_grid;
@@ -1345,13 +1345,13 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'astar' */
-static PyTypeObject *__pyx_ptype_5astar___pyx_scope_struct__main = 0;
-#define __Pyx_MODULE_NAME "astar"
-extern int __pyx_module_is_main_astar;
-int __pyx_module_is_main_astar = 0;
+/* Module declarations from 'astar_cy' */
+static PyTypeObject *__pyx_ptype_8astar_cy___pyx_scope_struct__main = 0;
+#define __Pyx_MODULE_NAME "astar_cy"
+extern int __pyx_module_is_main_astar_cy;
+int __pyx_module_is_main_astar_cy = 0;
 
-/* Implementation of 'astar' */
+/* Implementation of 'astar_cy' */
 static PyObject *__pyx_builtin_range;
 static const char __pyx_k_h[] = "h";
 static const char __pyx_k_i[] = "i";
@@ -1404,7 +1404,6 @@ static const char __pyx_k_BLACK[] = "BLACK";
 static const char __pyx_k_GREEN[] = "GREEN";
 static const char __pyx_k_WHITE[] = "WHITE";
 static const char __pyx_k_WIDTH[] = "WIDTH";
-static const char __pyx_k_astar[] = "astar";
 static const char __pyx_k_color[] = "color";
 static const char __pyx_k_count[] = "count";
 static const char __pyx_k_empty[] = "empty";
@@ -1435,7 +1434,7 @@ static const char __pyx_k_g_score[] = "g_score";
 static const char __pyx_k_get_pos[] = "get_pos";
 static const char __pyx_k_is_open[] = "is_open";
 static const char __pyx_k_prepare[] = "__prepare__";
-static const char __pyx_k_astar_py[] = "astar.py";
+static const char __pyx_k_astar_cy[] = "astar_cy";
 static const char __pyx_k_is_start[] = "is_start";
 static const char __pyx_k_make_end[] = "make_end";
 static const char __pyx_k_neighbor[] = "neighbor";
@@ -1465,6 +1464,7 @@ static const char __pyx_k_make_closed[] = "make_closed";
 static const char __pyx_k_set_caption[] = "set_caption";
 static const char __pyx_k_Spot_get_pos[] = "Spot.get_pos";
 static const char __pyx_k_Spot_is_open[] = "Spot.is_open";
+static const char __pyx_k_astar_cy_pyx[] = "astar_cy.pyx";
 static const char __pyx_k_make_barrier[] = "make_barrier";
 static const char __pyx_k_temp_g_score[] = "temp_g_score";
 static const char __pyx_k_PriorityQueue[] = "PriorityQueue";
@@ -1524,8 +1524,8 @@ static PyObject *__pyx_n_s_WIN;
 static PyObject *__pyx_n_s_YELLOW;
 static PyObject *__pyx_n_s_algorithm;
 static PyObject *__pyx_n_s_append;
-static PyObject *__pyx_n_s_astar;
-static PyObject *__pyx_kp_s_astar_py;
+static PyObject *__pyx_n_s_astar_cy;
+static PyObject *__pyx_kp_s_astar_cy_pyx;
 static PyObject *__pyx_n_s_came_from;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_col;
@@ -1617,33 +1617,33 @@ static PyObject *__pyx_n_s_x2;
 static PyObject *__pyx_n_s_y;
 static PyObject *__pyx_n_s_y1;
 static PyObject *__pyx_n_s_y2;
-static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_row, PyObject *__pyx_v_col, PyObject *__pyx_v_width, PyObject *__pyx_v_total_rows); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_16make_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_18make_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_win); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_grid); /* proto */
-static PyObject *__pyx_pf_5astar_4Spot_32__lt__(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_p1, PyObject *__pyx_v_p2); /* proto */
-static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_came_from, PyObject *__pyx_v_current, PyObject *__pyx_v_draw); /* proto */
-static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_draw, PyObject *__pyx_v_grid, PyObject *__pyx_v_start, PyObject *__pyx_v_end); /* proto */
-static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
-static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
-static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_grid, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
-static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_pos, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_row, PyObject *__pyx_v_col, PyObject *__pyx_v_width, PyObject *__pyx_v_total_rows); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_16make_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_18make_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_win); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_30update_neighbors(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_grid); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4Spot_32__lt__(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8astar_cy_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_p1, PyObject *__pyx_v_p2); /* proto */
+static PyObject *__pyx_pf_8astar_cy_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_came_from, PyObject *__pyx_v_current, PyObject *__pyx_v_draw); /* proto */
+static PyObject *__pyx_pf_8astar_cy_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_draw, PyObject *__pyx_v_grid, PyObject *__pyx_v_start, PyObject *__pyx_v_end); /* proto */
+static PyObject *__pyx_pf_8astar_cy_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
+static PyObject *__pyx_pf_8astar_cy_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
+static PyObject *__pyx_pf_8astar_cy_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_grid, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
+static PyObject *__pyx_pf_8astar_cy_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_pos, PyObject *__pyx_v_rows, PyObject *__pyx_v_width); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_width); /* proto */
-static PyObject *__pyx_tp_new_5astar___pyx_scope_struct__main(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_pf_8astar_cy_14main(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_width); /* proto */
+static PyObject *__pyx_tp_new_8astar_cy___pyx_scope_struct__main(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_64;
@@ -1716,7 +1716,7 @@ static PyObject *__pyx_codeobj__59;
 static PyObject *__pyx_codeobj__61;
 /* Late includes */
 
-/* "astar.py":22
+/* "astar_cy.pyx":22
  * 
  * class Spot:
  *     def __init__(self, row, col, width, total_rows):             # <<<<<<<<<<<<<<
@@ -1725,9 +1725,9 @@ static PyObject *__pyx_codeobj__61;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_4Spot_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_4Spot_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_4Spot_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_row = 0;
   PyObject *__pyx_v_col = 0;
@@ -1811,18 +1811,18 @@ static PyObject *__pyx_pw_5astar_4Spot_1__init__(PyObject *__pyx_self, PyObject 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 22, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.Spot.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_4Spot___init__(__pyx_self, __pyx_v_self, __pyx_v_row, __pyx_v_col, __pyx_v_width, __pyx_v_total_rows);
+  __pyx_r = __pyx_pf_8astar_cy_4Spot___init__(__pyx_self, __pyx_v_self, __pyx_v_row, __pyx_v_col, __pyx_v_width, __pyx_v_total_rows);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_row, PyObject *__pyx_v_col, PyObject *__pyx_v_width, PyObject *__pyx_v_total_rows) {
+static PyObject *__pyx_pf_8astar_cy_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_row, PyObject *__pyx_v_col, PyObject *__pyx_v_width, PyObject *__pyx_v_total_rows) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1831,7 +1831,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "astar.py":23
+  /* "astar_cy.pyx":23
  * class Spot:
  *     def __init__(self, row, col, width, total_rows):
  *         self.row = row             # <<<<<<<<<<<<<<
@@ -1840,7 +1840,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_row, __pyx_v_row) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  /* "astar.py":24
+  /* "astar_cy.pyx":24
  *     def __init__(self, row, col, width, total_rows):
  *         self.row = row
  *         self.col = col             # <<<<<<<<<<<<<<
@@ -1849,7 +1849,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_col, __pyx_v_col) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
-  /* "astar.py":25
+  /* "astar_cy.pyx":25
  *         self.row = row
  *         self.col = col
  *         self.x = row * width             # <<<<<<<<<<<<<<
@@ -1861,7 +1861,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_x, __pyx_t_1) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":26
+  /* "astar_cy.pyx":26
  *         self.col = col
  *         self.x = row * width
  *         self.y = col * width             # <<<<<<<<<<<<<<
@@ -1873,7 +1873,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_y, __pyx_t_1) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":27
+  /* "astar_cy.pyx":27
  *         self.x = row * width
  *         self.y = col * width
  *         self.color = WHITE             # <<<<<<<<<<<<<<
@@ -1885,7 +1885,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":28
+  /* "astar_cy.pyx":28
  *         self.y = col * width
  *         self.color = WHITE
  *         self.neighbors = []             # <<<<<<<<<<<<<<
@@ -1897,7 +1897,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_neighbors, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":29
+  /* "astar_cy.pyx":29
  *         self.color = WHITE
  *         self.neighbors = []
  *         self.width = width             # <<<<<<<<<<<<<<
@@ -1906,7 +1906,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_width, __pyx_v_width) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
 
-  /* "astar.py":30
+  /* "astar_cy.pyx":30
  *         self.neighbors = []
  *         self.width = width
  *         self.total_rows = total_rows             # <<<<<<<<<<<<<<
@@ -1915,7 +1915,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_total_rows, __pyx_v_total_rows) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
 
-  /* "astar.py":22
+  /* "astar_cy.pyx":22
  * 
  * class Spot:
  *     def __init__(self, row, col, width, total_rows):             # <<<<<<<<<<<<<<
@@ -1928,7 +1928,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1936,7 +1936,7 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "astar.py":32
+/* "astar_cy.pyx":32
  *         self.total_rows = total_rows
  * 
  *     def get_pos(self):             # <<<<<<<<<<<<<<
@@ -1945,20 +1945,20 @@ static PyObject *__pyx_pf_5astar_4Spot___init__(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_3get_pos(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_3get_pos = {"get_pos", (PyCFunction)__pyx_pw_5astar_4Spot_3get_pos, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_3get_pos(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_3get_pos(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_3get_pos = {"get_pos", (PyCFunction)__pyx_pw_8astar_cy_4Spot_3get_pos, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_3get_pos(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_pos (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_2get_pos(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_2get_pos(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1969,7 +1969,7 @@ static PyObject *__pyx_pf_5astar_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_se
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_pos", 0);
 
-  /* "astar.py":33
+  /* "astar_cy.pyx":33
  * 
  *     def get_pos(self):
  *         return self.row, self.col             # <<<<<<<<<<<<<<
@@ -1993,7 +1993,7 @@ static PyObject *__pyx_pf_5astar_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_se
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":32
+  /* "astar_cy.pyx":32
  *         self.total_rows = total_rows
  * 
  *     def get_pos(self):             # <<<<<<<<<<<<<<
@@ -2006,7 +2006,7 @@ static PyObject *__pyx_pf_5astar_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.Spot.get_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.get_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2014,7 +2014,7 @@ static PyObject *__pyx_pf_5astar_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "astar.py":35
+/* "astar_cy.pyx":35
  *         return self.row, self.col
  * 
  *     def is_closed(self):             # <<<<<<<<<<<<<<
@@ -2023,20 +2023,20 @@ static PyObject *__pyx_pf_5astar_4Spot_2get_pos(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_5is_closed(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_5is_closed = {"is_closed", (PyCFunction)__pyx_pw_5astar_4Spot_5is_closed, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_5is_closed(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_5is_closed(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_5is_closed = {"is_closed", (PyCFunction)__pyx_pw_8astar_cy_4Spot_5is_closed, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_5is_closed(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_closed (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_4is_closed(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_4is_closed(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2047,7 +2047,7 @@ static PyObject *__pyx_pf_5astar_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_closed", 0);
 
-  /* "astar.py":36
+  /* "astar_cy.pyx":36
  * 
  *     def is_closed(self):
  *         return self.color == RED             # <<<<<<<<<<<<<<
@@ -2066,7 +2066,7 @@ static PyObject *__pyx_pf_5astar_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":35
+  /* "astar_cy.pyx":35
  *         return self.row, self.col
  * 
  *     def is_closed(self):             # <<<<<<<<<<<<<<
@@ -2079,7 +2079,7 @@ static PyObject *__pyx_pf_5astar_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.Spot.is_closed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.is_closed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2087,7 +2087,7 @@ static PyObject *__pyx_pf_5astar_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "astar.py":38
+/* "astar_cy.pyx":38
  *         return self.color == RED
  * 
  *     def is_open(self):             # <<<<<<<<<<<<<<
@@ -2096,20 +2096,20 @@ static PyObject *__pyx_pf_5astar_4Spot_4is_closed(CYTHON_UNUSED PyObject *__pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_7is_open(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_7is_open = {"is_open", (PyCFunction)__pyx_pw_5astar_4Spot_7is_open, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_7is_open(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_7is_open(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_7is_open = {"is_open", (PyCFunction)__pyx_pw_8astar_cy_4Spot_7is_open, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_7is_open(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_open (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_6is_open(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_6is_open(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2120,7 +2120,7 @@ static PyObject *__pyx_pf_5astar_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_se
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_open", 0);
 
-  /* "astar.py":39
+  /* "astar_cy.pyx":39
  * 
  *     def is_open(self):
  *         return self.color == GREEN             # <<<<<<<<<<<<<<
@@ -2139,7 +2139,7 @@ static PyObject *__pyx_pf_5astar_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_se
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":38
+  /* "astar_cy.pyx":38
  *         return self.color == RED
  * 
  *     def is_open(self):             # <<<<<<<<<<<<<<
@@ -2152,7 +2152,7 @@ static PyObject *__pyx_pf_5astar_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.Spot.is_open", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.is_open", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2160,7 +2160,7 @@ static PyObject *__pyx_pf_5astar_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "astar.py":41
+/* "astar_cy.pyx":41
  *         return self.color == GREEN
  * 
  *     def is_barrier(self):             # <<<<<<<<<<<<<<
@@ -2169,20 +2169,20 @@ static PyObject *__pyx_pf_5astar_4Spot_6is_open(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_9is_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_9is_barrier = {"is_barrier", (PyCFunction)__pyx_pw_5astar_4Spot_9is_barrier, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_9is_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_9is_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_9is_barrier = {"is_barrier", (PyCFunction)__pyx_pw_8astar_cy_4Spot_9is_barrier, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_9is_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_barrier (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_8is_barrier(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_8is_barrier(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2193,7 +2193,7 @@ static PyObject *__pyx_pf_5astar_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_barrier", 0);
 
-  /* "astar.py":42
+  /* "astar_cy.pyx":42
  * 
  *     def is_barrier(self):
  *         return self.color == BLACK             # <<<<<<<<<<<<<<
@@ -2212,7 +2212,7 @@ static PyObject *__pyx_pf_5astar_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":41
+  /* "astar_cy.pyx":41
  *         return self.color == GREEN
  * 
  *     def is_barrier(self):             # <<<<<<<<<<<<<<
@@ -2225,7 +2225,7 @@ static PyObject *__pyx_pf_5astar_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.Spot.is_barrier", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.is_barrier", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2233,7 +2233,7 @@ static PyObject *__pyx_pf_5astar_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "astar.py":44
+/* "astar_cy.pyx":44
  *         return self.color == BLACK
  * 
  *     def is_start(self):             # <<<<<<<<<<<<<<
@@ -2242,20 +2242,20 @@ static PyObject *__pyx_pf_5astar_4Spot_8is_barrier(CYTHON_UNUSED PyObject *__pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_11is_start(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_11is_start = {"is_start", (PyCFunction)__pyx_pw_5astar_4Spot_11is_start, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_11is_start(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_11is_start(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_11is_start = {"is_start", (PyCFunction)__pyx_pw_8astar_cy_4Spot_11is_start, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_11is_start(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_10is_start(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_10is_start(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2266,7 +2266,7 @@ static PyObject *__pyx_pf_5astar_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_start", 0);
 
-  /* "astar.py":45
+  /* "astar_cy.pyx":45
  * 
  *     def is_start(self):
  *         return self.color == ORANGE             # <<<<<<<<<<<<<<
@@ -2285,7 +2285,7 @@ static PyObject *__pyx_pf_5astar_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":44
+  /* "astar_cy.pyx":44
  *         return self.color == BLACK
  * 
  *     def is_start(self):             # <<<<<<<<<<<<<<
@@ -2298,7 +2298,7 @@ static PyObject *__pyx_pf_5astar_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.Spot.is_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.is_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2306,7 +2306,7 @@ static PyObject *__pyx_pf_5astar_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "astar.py":47
+/* "astar_cy.pyx":47
  *         return self.color == ORANGE
  * 
  *     def is_end(self):             # <<<<<<<<<<<<<<
@@ -2315,20 +2315,20 @@ static PyObject *__pyx_pf_5astar_4Spot_10is_start(CYTHON_UNUSED PyObject *__pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_13is_end(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_13is_end = {"is_end", (PyCFunction)__pyx_pw_5astar_4Spot_13is_end, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_13is_end(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_13is_end(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_13is_end = {"is_end", (PyCFunction)__pyx_pw_8astar_cy_4Spot_13is_end, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_13is_end(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_end (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_12is_end(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_12is_end(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2339,7 +2339,7 @@ static PyObject *__pyx_pf_5astar_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_se
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_end", 0);
 
-  /* "astar.py":48
+  /* "astar_cy.pyx":48
  * 
  *     def is_end(self):
  *         return self.color == TURQUOISE             # <<<<<<<<<<<<<<
@@ -2358,7 +2358,7 @@ static PyObject *__pyx_pf_5astar_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_se
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":47
+  /* "astar_cy.pyx":47
  *         return self.color == ORANGE
  * 
  *     def is_end(self):             # <<<<<<<<<<<<<<
@@ -2371,7 +2371,7 @@ static PyObject *__pyx_pf_5astar_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.Spot.is_end", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.is_end", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2379,7 +2379,7 @@ static PyObject *__pyx_pf_5astar_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "astar.py":50
+/* "astar_cy.pyx":50
  *         return self.color == TURQUOISE
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
@@ -2388,20 +2388,20 @@ static PyObject *__pyx_pf_5astar_4Spot_12is_end(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_15reset(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_15reset = {"reset", (PyCFunction)__pyx_pw_5astar_4Spot_15reset, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_15reset(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_15reset(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_15reset = {"reset", (PyCFunction)__pyx_pw_8astar_cy_4Spot_15reset, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_15reset(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("reset (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_14reset(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_14reset(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2410,7 +2410,7 @@ static PyObject *__pyx_pf_5astar_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_sel
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("reset", 0);
 
-  /* "astar.py":51
+  /* "astar_cy.pyx":51
  * 
  *     def reset(self):
  *         self.color = WHITE             # <<<<<<<<<<<<<<
@@ -2422,7 +2422,7 @@ static PyObject *__pyx_pf_5astar_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_sel
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":50
+  /* "astar_cy.pyx":50
  *         return self.color == TURQUOISE
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
@@ -2435,7 +2435,7 @@ static PyObject *__pyx_pf_5astar_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_sel
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.reset", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.reset", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2443,7 +2443,7 @@ static PyObject *__pyx_pf_5astar_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_sel
   return __pyx_r;
 }
 
-/* "astar.py":53
+/* "astar_cy.pyx":53
  *         self.color = WHITE
  * 
  *     def make_start(self):             # <<<<<<<<<<<<<<
@@ -2452,20 +2452,20 @@ static PyObject *__pyx_pf_5astar_4Spot_14reset(CYTHON_UNUSED PyObject *__pyx_sel
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_17make_start(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_17make_start = {"make_start", (PyCFunction)__pyx_pw_5astar_4Spot_17make_start, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_17make_start(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_17make_start(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_17make_start = {"make_start", (PyCFunction)__pyx_pw_8astar_cy_4Spot_17make_start, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_17make_start(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("make_start (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_16make_start(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_16make_start(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_16make_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_16make_start(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2474,7 +2474,7 @@ static PyObject *__pyx_pf_5astar_4Spot_16make_start(CYTHON_UNUSED PyObject *__py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_start", 0);
 
-  /* "astar.py":54
+  /* "astar_cy.pyx":54
  * 
  *     def make_start(self):
  *         self.color = ORANGE             # <<<<<<<<<<<<<<
@@ -2486,7 +2486,7 @@ static PyObject *__pyx_pf_5astar_4Spot_16make_start(CYTHON_UNUSED PyObject *__py
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":53
+  /* "astar_cy.pyx":53
  *         self.color = WHITE
  * 
  *     def make_start(self):             # <<<<<<<<<<<<<<
@@ -2499,7 +2499,7 @@ static PyObject *__pyx_pf_5astar_4Spot_16make_start(CYTHON_UNUSED PyObject *__py
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.make_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.make_start", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2507,7 +2507,7 @@ static PyObject *__pyx_pf_5astar_4Spot_16make_start(CYTHON_UNUSED PyObject *__py
   return __pyx_r;
 }
 
-/* "astar.py":56
+/* "astar_cy.pyx":56
  *         self.color = ORANGE
  * 
  *     def make_closed(self):             # <<<<<<<<<<<<<<
@@ -2516,20 +2516,20 @@ static PyObject *__pyx_pf_5astar_4Spot_16make_start(CYTHON_UNUSED PyObject *__py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_19make_closed(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_19make_closed = {"make_closed", (PyCFunction)__pyx_pw_5astar_4Spot_19make_closed, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_19make_closed(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_19make_closed(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_19make_closed = {"make_closed", (PyCFunction)__pyx_pw_8astar_cy_4Spot_19make_closed, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_19make_closed(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("make_closed (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_18make_closed(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_18make_closed(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_18make_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_18make_closed(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2538,7 +2538,7 @@ static PyObject *__pyx_pf_5astar_4Spot_18make_closed(CYTHON_UNUSED PyObject *__p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_closed", 0);
 
-  /* "astar.py":57
+  /* "astar_cy.pyx":57
  * 
  *     def make_closed(self):
  *         self.color = RED             # <<<<<<<<<<<<<<
@@ -2550,7 +2550,7 @@ static PyObject *__pyx_pf_5astar_4Spot_18make_closed(CYTHON_UNUSED PyObject *__p
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":56
+  /* "astar_cy.pyx":56
  *         self.color = ORANGE
  * 
  *     def make_closed(self):             # <<<<<<<<<<<<<<
@@ -2563,7 +2563,7 @@ static PyObject *__pyx_pf_5astar_4Spot_18make_closed(CYTHON_UNUSED PyObject *__p
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.make_closed", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.make_closed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2571,7 +2571,7 @@ static PyObject *__pyx_pf_5astar_4Spot_18make_closed(CYTHON_UNUSED PyObject *__p
   return __pyx_r;
 }
 
-/* "astar.py":59
+/* "astar_cy.pyx":59
  *         self.color = RED
  * 
  *     def make_open(self):             # <<<<<<<<<<<<<<
@@ -2580,20 +2580,20 @@ static PyObject *__pyx_pf_5astar_4Spot_18make_closed(CYTHON_UNUSED PyObject *__p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_21make_open(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_21make_open = {"make_open", (PyCFunction)__pyx_pw_5astar_4Spot_21make_open, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_21make_open(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_21make_open(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_21make_open = {"make_open", (PyCFunction)__pyx_pw_8astar_cy_4Spot_21make_open, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_21make_open(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("make_open (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_20make_open(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_20make_open(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2602,7 +2602,7 @@ static PyObject *__pyx_pf_5astar_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_open", 0);
 
-  /* "astar.py":60
+  /* "astar_cy.pyx":60
  * 
  *     def make_open(self):
  *         self.color = GREEN             # <<<<<<<<<<<<<<
@@ -2614,7 +2614,7 @@ static PyObject *__pyx_pf_5astar_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":59
+  /* "astar_cy.pyx":59
  *         self.color = RED
  * 
  *     def make_open(self):             # <<<<<<<<<<<<<<
@@ -2627,7 +2627,7 @@ static PyObject *__pyx_pf_5astar_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.make_open", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.make_open", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2635,7 +2635,7 @@ static PyObject *__pyx_pf_5astar_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "astar.py":62
+/* "astar_cy.pyx":62
  *         self.color = GREEN
  * 
  *     def make_barrier(self):             # <<<<<<<<<<<<<<
@@ -2644,20 +2644,20 @@ static PyObject *__pyx_pf_5astar_4Spot_20make_open(CYTHON_UNUSED PyObject *__pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_23make_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_23make_barrier = {"make_barrier", (PyCFunction)__pyx_pw_5astar_4Spot_23make_barrier, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_23make_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_23make_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_23make_barrier = {"make_barrier", (PyCFunction)__pyx_pw_8astar_cy_4Spot_23make_barrier, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_23make_barrier(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("make_barrier (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_22make_barrier(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_22make_barrier(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2666,7 +2666,7 @@ static PyObject *__pyx_pf_5astar_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_barrier", 0);
 
-  /* "astar.py":63
+  /* "astar_cy.pyx":63
  * 
  *     def make_barrier(self):
  *         self.color = BLACK             # <<<<<<<<<<<<<<
@@ -2678,7 +2678,7 @@ static PyObject *__pyx_pf_5astar_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":62
+  /* "astar_cy.pyx":62
  *         self.color = GREEN
  * 
  *     def make_barrier(self):             # <<<<<<<<<<<<<<
@@ -2691,7 +2691,7 @@ static PyObject *__pyx_pf_5astar_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.make_barrier", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.make_barrier", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2699,7 +2699,7 @@ static PyObject *__pyx_pf_5astar_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "astar.py":65
+/* "astar_cy.pyx":65
  *         self.color = BLACK
  * 
  *     def make_end(self):             # <<<<<<<<<<<<<<
@@ -2708,20 +2708,20 @@ static PyObject *__pyx_pf_5astar_4Spot_22make_barrier(CYTHON_UNUSED PyObject *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_25make_end(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_25make_end = {"make_end", (PyCFunction)__pyx_pw_5astar_4Spot_25make_end, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_25make_end(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_25make_end(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_25make_end = {"make_end", (PyCFunction)__pyx_pw_8astar_cy_4Spot_25make_end, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_25make_end(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("make_end (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_24make_end(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_24make_end(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2730,7 +2730,7 @@ static PyObject *__pyx_pf_5astar_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_end", 0);
 
-  /* "astar.py":66
+  /* "astar_cy.pyx":66
  * 
  *     def make_end(self):
  *         self.color = TURQUOISE             # <<<<<<<<<<<<<<
@@ -2742,7 +2742,7 @@ static PyObject *__pyx_pf_5astar_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":65
+  /* "astar_cy.pyx":65
  *         self.color = BLACK
  * 
  *     def make_end(self):             # <<<<<<<<<<<<<<
@@ -2755,7 +2755,7 @@ static PyObject *__pyx_pf_5astar_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.make_end", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.make_end", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2763,7 +2763,7 @@ static PyObject *__pyx_pf_5astar_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "astar.py":68
+/* "astar_cy.pyx":68
  *         self.color = TURQUOISE
  * 
  *     def make_path(self):             # <<<<<<<<<<<<<<
@@ -2772,20 +2772,20 @@ static PyObject *__pyx_pf_5astar_4Spot_24make_end(CYTHON_UNUSED PyObject *__pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_27make_path(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_27make_path = {"make_path", (PyCFunction)__pyx_pw_5astar_4Spot_27make_path, METH_O, 0};
-static PyObject *__pyx_pw_5astar_4Spot_27make_path(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_27make_path(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_27make_path = {"make_path", (PyCFunction)__pyx_pw_8astar_cy_4Spot_27make_path, METH_O, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_27make_path(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("make_path (wrapper)", 0);
-  __pyx_r = __pyx_pf_5astar_4Spot_26make_path(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_26make_path(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2794,7 +2794,7 @@ static PyObject *__pyx_pf_5astar_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_path", 0);
 
-  /* "astar.py":69
+  /* "astar_cy.pyx":69
  * 
  *     def make_path(self):
  *         self.color = PURPLE             # <<<<<<<<<<<<<<
@@ -2806,7 +2806,7 @@ static PyObject *__pyx_pf_5astar_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_color, __pyx_t_1) < 0) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":68
+  /* "astar_cy.pyx":68
  *         self.color = TURQUOISE
  * 
  *     def make_path(self):             # <<<<<<<<<<<<<<
@@ -2819,7 +2819,7 @@ static PyObject *__pyx_pf_5astar_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("astar.Spot.make_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.make_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2827,7 +2827,7 @@ static PyObject *__pyx_pf_5astar_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "astar.py":71
+/* "astar_cy.pyx":71
  *         self.color = PURPLE
  * 
  *     def draw(self, win):             # <<<<<<<<<<<<<<
@@ -2836,9 +2836,9 @@ static PyObject *__pyx_pf_5astar_4Spot_26make_path(CYTHON_UNUSED PyObject *__pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_29draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_29draw = {"draw", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_4Spot_29draw, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_4Spot_29draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_29draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_29draw = {"draw", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_4Spot_29draw, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_29draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_win = 0;
   int __pyx_lineno = 0;
@@ -2889,18 +2889,18 @@ static PyObject *__pyx_pw_5astar_4Spot_29draw(PyObject *__pyx_self, PyObject *__
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("draw", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 71, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.Spot.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_4Spot_28draw(__pyx_self, __pyx_v_self, __pyx_v_win);
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_28draw(__pyx_self, __pyx_v_self, __pyx_v_win);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_win) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_win) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2917,7 +2917,7 @@ static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("draw", 0);
 
-  /* "astar.py":72
+  /* "astar_cy.pyx":72
  * 
  *     def draw(self, win):
  *         pygame.draw.rect(             # <<<<<<<<<<<<<<
@@ -2933,7 +2933,7 @@ static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":73
+  /* "astar_cy.pyx":73
  *     def draw(self, win):
  *         pygame.draw.rect(
  *             win, self.color, (self.x, self.y, self.width, self.width))             # <<<<<<<<<<<<<<
@@ -3018,7 +3018,7 @@ static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":71
+  /* "astar_cy.pyx":71
  *         self.color = PURPLE
  * 
  *     def draw(self, win):             # <<<<<<<<<<<<<<
@@ -3038,7 +3038,7 @@ static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("astar.Spot.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3046,7 +3046,7 @@ static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self
   return __pyx_r;
 }
 
-/* "astar.py":75
+/* "astar_cy.pyx":75
  *             win, self.color, (self.x, self.y, self.width, self.width))
  * 
  *     def update_neighbors(self, grid):             # <<<<<<<<<<<<<<
@@ -3055,9 +3055,9 @@ static PyObject *__pyx_pf_5astar_4Spot_28draw(CYTHON_UNUSED PyObject *__pyx_self
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_31update_neighbors(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_31update_neighbors = {"update_neighbors", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_4Spot_31update_neighbors, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_4Spot_31update_neighbors(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_31update_neighbors(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_31update_neighbors = {"update_neighbors", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_4Spot_31update_neighbors, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_31update_neighbors(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_grid = 0;
   int __pyx_lineno = 0;
@@ -3108,18 +3108,18 @@ static PyObject *__pyx_pw_5astar_4Spot_31update_neighbors(PyObject *__pyx_self, 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("update_neighbors", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 75, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.Spot.update_neighbors", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.update_neighbors", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_4Spot_30update_neighbors(__pyx_self, __pyx_v_self, __pyx_v_grid);
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_30update_neighbors(__pyx_self, __pyx_v_self, __pyx_v_grid);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_grid) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_30update_neighbors(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_grid) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3135,7 +3135,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("update_neighbors", 0);
 
-  /* "astar.py":76
+  /* "astar_cy.pyx":76
  * 
  *     def update_neighbors(self, grid):
  *         self.neighbors = []             # <<<<<<<<<<<<<<
@@ -3147,7 +3147,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_neighbors, __pyx_t_1) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":78
+  /* "astar_cy.pyx":78
  *         self.neighbors = []
  *         # DOWN
  *         if self.row < self.total_rows - 1 and not grid[self.row + 1][self.col].is_barrier():             # <<<<<<<<<<<<<<
@@ -3210,7 +3210,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "astar.py":79
+    /* "astar_cy.pyx":79
  *         # DOWN
  *         if self.row < self.total_rows - 1 and not grid[self.row + 1][self.col].is_barrier():
  *             self.neighbors.append(grid[self.row + 1][self.col])             # <<<<<<<<<<<<<<
@@ -3237,7 +3237,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "astar.py":78
+    /* "astar_cy.pyx":78
  *         self.neighbors = []
  *         # DOWN
  *         if self.row < self.total_rows - 1 and not grid[self.row + 1][self.col].is_barrier():             # <<<<<<<<<<<<<<
@@ -3246,7 +3246,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
  */
   }
 
-  /* "astar.py":81
+  /* "astar_cy.pyx":81
  *             self.neighbors.append(grid[self.row + 1][self.col])
  * 
  *         if self.row > 0 and not grid[self.row - 1][self.col].is_barrier():  # UP             # <<<<<<<<<<<<<<
@@ -3303,7 +3303,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "astar.py":82
+    /* "astar_cy.pyx":82
  * 
  *         if self.row > 0 and not grid[self.row - 1][self.col].is_barrier():  # UP
  *             self.neighbors.append(grid[self.row - 1][self.col])             # <<<<<<<<<<<<<<
@@ -3330,7 +3330,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "astar.py":81
+    /* "astar_cy.pyx":81
  *             self.neighbors.append(grid[self.row + 1][self.col])
  * 
  *         if self.row > 0 and not grid[self.row - 1][self.col].is_barrier():  # UP             # <<<<<<<<<<<<<<
@@ -3339,7 +3339,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
  */
   }
 
-  /* "astar.py":85
+  /* "astar_cy.pyx":85
  * 
  *         # RIGHT
  *         if self.col < self.total_rows - 1 and not grid[self.row][self.col + 1].is_barrier():             # <<<<<<<<<<<<<<
@@ -3402,7 +3402,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   __pyx_L10_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "astar.py":86
+    /* "astar_cy.pyx":86
  *         # RIGHT
  *         if self.col < self.total_rows - 1 and not grid[self.row][self.col + 1].is_barrier():
  *             self.neighbors.append(grid[self.row][self.col + 1])             # <<<<<<<<<<<<<<
@@ -3429,7 +3429,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "astar.py":85
+    /* "astar_cy.pyx":85
  * 
  *         # RIGHT
  *         if self.col < self.total_rows - 1 and not grid[self.row][self.col + 1].is_barrier():             # <<<<<<<<<<<<<<
@@ -3438,7 +3438,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
  */
   }
 
-  /* "astar.py":88
+  /* "astar_cy.pyx":88
  *             self.neighbors.append(grid[self.row][self.col + 1])
  * 
  *         if self.col > 0 and not grid[self.row][self.col - 1].is_barrier():  # LEFT             # <<<<<<<<<<<<<<
@@ -3495,7 +3495,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   __pyx_L13_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "astar.py":89
+    /* "astar_cy.pyx":89
  * 
  *         if self.col > 0 and not grid[self.row][self.col - 1].is_barrier():  # LEFT
  *             self.neighbors.append(grid[self.row][self.col - 1])             # <<<<<<<<<<<<<<
@@ -3522,7 +3522,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "astar.py":88
+    /* "astar_cy.pyx":88
  *             self.neighbors.append(grid[self.row][self.col + 1])
  * 
  *         if self.col > 0 and not grid[self.row][self.col - 1].is_barrier():  # LEFT             # <<<<<<<<<<<<<<
@@ -3531,7 +3531,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
  */
   }
 
-  /* "astar.py":75
+  /* "astar_cy.pyx":75
  *             win, self.color, (self.x, self.y, self.width, self.width))
  * 
  *     def update_neighbors(self, grid):             # <<<<<<<<<<<<<<
@@ -3547,7 +3547,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("astar.Spot.update_neighbors", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.update_neighbors", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3555,7 +3555,7 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "astar.py":91
+/* "astar_cy.pyx":91
  *             self.neighbors.append(grid[self.row][self.col - 1])
  * 
  *     def __lt__(self, other):             # <<<<<<<<<<<<<<
@@ -3564,9 +3564,9 @@ static PyObject *__pyx_pf_5astar_4Spot_30update_neighbors(CYTHON_UNUSED PyObject
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4Spot_33__lt__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4Spot_33__lt__ = {"__lt__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_4Spot_33__lt__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_4Spot_33__lt__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_4Spot_33__lt__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4Spot_33__lt__ = {"__lt__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_4Spot_33__lt__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_4Spot_33__lt__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   CYTHON_UNUSED PyObject *__pyx_v_self = 0;
   CYTHON_UNUSED PyObject *__pyx_v_other = 0;
   int __pyx_lineno = 0;
@@ -3617,23 +3617,23 @@ static PyObject *__pyx_pw_5astar_4Spot_33__lt__(PyObject *__pyx_self, PyObject *
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__lt__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.Spot.__lt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.Spot.__lt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_4Spot_32__lt__(__pyx_self, __pyx_v_self, __pyx_v_other);
+  __pyx_r = __pyx_pf_8astar_cy_4Spot_32__lt__(__pyx_self, __pyx_v_self, __pyx_v_other);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4Spot_32__lt__(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_other) {
+static PyObject *__pyx_pf_8astar_cy_4Spot_32__lt__(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_other) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__lt__", 0);
 
-  /* "astar.py":92
+  /* "astar_cy.pyx":92
  * 
  *     def __lt__(self, other):
  *         return False             # <<<<<<<<<<<<<<
@@ -3645,7 +3645,7 @@ static PyObject *__pyx_pf_5astar_4Spot_32__lt__(CYTHON_UNUSED PyObject *__pyx_se
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "astar.py":91
+  /* "astar_cy.pyx":91
  *             self.neighbors.append(grid[self.row][self.col - 1])
  * 
  *     def __lt__(self, other):             # <<<<<<<<<<<<<<
@@ -3660,7 +3660,7 @@ static PyObject *__pyx_pf_5astar_4Spot_32__lt__(CYTHON_UNUSED PyObject *__pyx_se
   return __pyx_r;
 }
 
-/* "astar.py":95
+/* "astar_cy.pyx":95
  * 
  * 
  * def h(p1, p2):             # <<<<<<<<<<<<<<
@@ -3669,9 +3669,9 @@ static PyObject *__pyx_pf_5astar_4Spot_32__lt__(CYTHON_UNUSED PyObject *__pyx_se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_1h(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_1h = {"h", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_1h, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_1h(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_1h(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_1h = {"h", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_1h, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_1h(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_p1 = 0;
   PyObject *__pyx_v_p2 = 0;
   int __pyx_lineno = 0;
@@ -3722,18 +3722,18 @@ static PyObject *__pyx_pw_5astar_1h(PyObject *__pyx_self, PyObject *__pyx_args, 
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("h", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 95, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.h", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.h", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_h(__pyx_self, __pyx_v_p1, __pyx_v_p2);
+  __pyx_r = __pyx_pf_8astar_cy_h(__pyx_self, __pyx_v_p1, __pyx_v_p2);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_p1, PyObject *__pyx_v_p2) {
+static PyObject *__pyx_pf_8astar_cy_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_p1, PyObject *__pyx_v_p2) {
   PyObject *__pyx_v_x1 = NULL;
   PyObject *__pyx_v_y1 = NULL;
   PyObject *__pyx_v_x2 = NULL;
@@ -3749,7 +3749,7 @@ static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("h", 0);
 
-  /* "astar.py":96
+  /* "astar_cy.pyx":96
  * 
  * def h(p1, p2):
  *     x1, y1 = p1             # <<<<<<<<<<<<<<
@@ -3805,7 +3805,7 @@ static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject 
   __pyx_v_y1 = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "astar.py":97
+  /* "astar_cy.pyx":97
  * def h(p1, p2):
  *     x1, y1 = p1
  *     x2, y2 = p2             # <<<<<<<<<<<<<<
@@ -3861,7 +3861,7 @@ static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject 
   __pyx_v_y2 = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "astar.py":98
+  /* "astar_cy.pyx":98
  *     x1, y1 = p1
  *     x2, y2 = p2
  *     return abs(x1 - x2) + abs(y1 - y2)             # <<<<<<<<<<<<<<
@@ -3887,7 +3887,7 @@ static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject 
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":95
+  /* "astar_cy.pyx":95
  * 
  * 
  * def h(p1, p2):             # <<<<<<<<<<<<<<
@@ -3900,7 +3900,7 @@ static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject 
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.h", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.h", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_x1);
@@ -3912,7 +3912,7 @@ static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject 
   return __pyx_r;
 }
 
-/* "astar.py":101
+/* "astar_cy.pyx":101
  * 
  * 
  * def reconstruct_path(came_from, current, draw):             # <<<<<<<<<<<<<<
@@ -3921,9 +3921,9 @@ static PyObject *__pyx_pf_5astar_h(CYTHON_UNUSED PyObject *__pyx_self, PyObject 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_3reconstruct_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_3reconstruct_path = {"reconstruct_path", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_3reconstruct_path, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_3reconstruct_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_3reconstruct_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_3reconstruct_path = {"reconstruct_path", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_3reconstruct_path, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_3reconstruct_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_came_from = 0;
   PyObject *__pyx_v_current = 0;
   PyObject *__pyx_v_draw = 0;
@@ -3985,18 +3985,18 @@ static PyObject *__pyx_pw_5astar_3reconstruct_path(PyObject *__pyx_self, PyObjec
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("reconstruct_path", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 101, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.reconstruct_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.reconstruct_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_2reconstruct_path(__pyx_self, __pyx_v_came_from, __pyx_v_current, __pyx_v_draw);
+  __pyx_r = __pyx_pf_8astar_cy_2reconstruct_path(__pyx_self, __pyx_v_came_from, __pyx_v_current, __pyx_v_draw);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_came_from, PyObject *__pyx_v_current, PyObject *__pyx_v_draw) {
+static PyObject *__pyx_pf_8astar_cy_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_came_from, PyObject *__pyx_v_current, PyObject *__pyx_v_draw) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -4010,7 +4010,7 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
   __Pyx_RefNannySetupContext("reconstruct_path", 0);
   __Pyx_INCREF(__pyx_v_current);
 
-  /* "astar.py":102
+  /* "astar_cy.pyx":102
  * 
  * def reconstruct_path(came_from, current, draw):
  *     while current in came_from:             # <<<<<<<<<<<<<<
@@ -4022,7 +4022,7 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
     __pyx_t_2 = (__pyx_t_1 != 0);
     if (!__pyx_t_2) break;
 
-    /* "astar.py":103
+    /* "astar_cy.pyx":103
  * def reconstruct_path(came_from, current, draw):
  *     while current in came_from:
  *         current = came_from[current]             # <<<<<<<<<<<<<<
@@ -4034,7 +4034,7 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
     __Pyx_DECREF_SET(__pyx_v_current, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "astar.py":104
+    /* "astar_cy.pyx":104
  *     while current in came_from:
  *         current = came_from[current]
  *         current.make_path()             # <<<<<<<<<<<<<<
@@ -4060,7 +4060,7 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "astar.py":105
+    /* "astar_cy.pyx":105
  *         current = came_from[current]
  *         current.make_path()
  *         draw()             # <<<<<<<<<<<<<<
@@ -4086,7 +4086,7 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
 
-  /* "astar.py":101
+  /* "astar_cy.pyx":101
  * 
  * 
  * def reconstruct_path(came_from, current, draw):             # <<<<<<<<<<<<<<
@@ -4101,7 +4101,7 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("astar.reconstruct_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.reconstruct_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_current);
@@ -4110,7 +4110,7 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "astar.py":108
+/* "astar_cy.pyx":108
  * 
  * 
  * def algorithm(draw, grid, start, end):             # <<<<<<<<<<<<<<
@@ -4119,9 +4119,9 @@ static PyObject *__pyx_pf_5astar_2reconstruct_path(CYTHON_UNUSED PyObject *__pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_5algorithm(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_5algorithm = {"algorithm", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_5algorithm, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_5algorithm(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_5algorithm(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_5algorithm = {"algorithm", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_5algorithm, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_5algorithm(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_draw = 0;
   PyObject *__pyx_v_grid = 0;
   PyObject *__pyx_v_start = 0;
@@ -4194,18 +4194,18 @@ static PyObject *__pyx_pw_5astar_5algorithm(PyObject *__pyx_self, PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("algorithm", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 108, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.algorithm", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.algorithm", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_4algorithm(__pyx_self, __pyx_v_draw, __pyx_v_grid, __pyx_v_start, __pyx_v_end);
+  __pyx_r = __pyx_pf_8astar_cy_4algorithm(__pyx_self, __pyx_v_draw, __pyx_v_grid, __pyx_v_start, __pyx_v_end);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_draw, PyObject *__pyx_v_grid, PyObject *__pyx_v_start, PyObject *__pyx_v_end) {
+static PyObject *__pyx_pf_8astar_cy_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_draw, PyObject *__pyx_v_grid, PyObject *__pyx_v_start, PyObject *__pyx_v_end) {
   PyObject *__pyx_v_count = NULL;
   PyObject *__pyx_v_open_set = NULL;
   PyObject *__pyx_v_came_from = NULL;
@@ -4242,7 +4242,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("algorithm", 0);
 
-  /* "astar.py":109
+  /* "astar_cy.pyx":109
  * 
  * def algorithm(draw, grid, start, end):
  *     count = 0             # <<<<<<<<<<<<<<
@@ -4252,7 +4252,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __Pyx_INCREF(__pyx_int_0);
   __pyx_v_count = __pyx_int_0;
 
-  /* "astar.py":110
+  /* "astar_cy.pyx":110
  * def algorithm(draw, grid, start, end):
  *     count = 0
  *     open_set = PriorityQueue()             # <<<<<<<<<<<<<<
@@ -4279,7 +4279,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_open_set = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "astar.py":111
+  /* "astar_cy.pyx":111
  *     count = 0
  *     open_set = PriorityQueue()
  *     open_set.put((0, count, start))             # <<<<<<<<<<<<<<
@@ -4317,7 +4317,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":112
+  /* "astar_cy.pyx":112
  *     open_set = PriorityQueue()
  *     open_set.put((0, count, start))
  *     came_from = {}             # <<<<<<<<<<<<<<
@@ -4329,7 +4329,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_came_from = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "astar.py":113
+  /* "astar_cy.pyx":113
  *     open_set.put((0, count, start))
  *     came_from = {}
  *     g_score = {spot: float("inf") for row in grid for spot in row}             # <<<<<<<<<<<<<<
@@ -4441,7 +4441,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_g_score = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "astar.py":114
+  /* "astar_cy.pyx":114
  *     came_from = {}
  *     g_score = {spot: float("inf") for row in grid for spot in row}
  *     g_score[start] = 0             # <<<<<<<<<<<<<<
@@ -4450,7 +4450,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
   if (unlikely(PyDict_SetItem(__pyx_v_g_score, __pyx_v_start, __pyx_int_0) < 0)) __PYX_ERR(0, 114, __pyx_L1_error)
 
-  /* "astar.py":115
+  /* "astar_cy.pyx":115
  *     g_score = {spot: float("inf") for row in grid for spot in row}
  *     g_score[start] = 0
  *     f_score = {spot: float("inf") for row in grid for spot in row}             # <<<<<<<<<<<<<<
@@ -4562,7 +4562,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_f_score = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "astar.py":116
+  /* "astar_cy.pyx":116
  *     g_score[start] = 0
  *     f_score = {spot: float("inf") for row in grid for spot in row}
  *     f_score[start] = h(start.get_pos(), end.get_pos())             # <<<<<<<<<<<<<<
@@ -4657,7 +4657,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   if (unlikely(PyDict_SetItem(__pyx_v_f_score, __pyx_v_start, __pyx_t_1) < 0)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":118
+  /* "astar_cy.pyx":118
  *     f_score[start] = h(start.get_pos(), end.get_pos())
  * 
  *     open_set_hash = {start}             # <<<<<<<<<<<<<<
@@ -4670,7 +4670,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_open_set_hash = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "astar.py":120
+  /* "astar_cy.pyx":120
  *     open_set_hash = {start}
  * 
  *     while not open_set.empty():             # <<<<<<<<<<<<<<
@@ -4700,7 +4700,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     __pyx_t_13 = ((!__pyx_t_12) != 0);
     if (!__pyx_t_13) break;
 
-    /* "astar.py":121
+    /* "astar_cy.pyx":121
  * 
  *     while not open_set.empty():
  *         for event in pygame.event.get():             # <<<<<<<<<<<<<<
@@ -4773,7 +4773,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_XDECREF_SET(__pyx_v_event, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "astar.py":122
+      /* "astar_cy.pyx":122
  *     while not open_set.empty():
  *         for event in pygame.event.get():
  *             if event.type == pygame.QUIT:             # <<<<<<<<<<<<<<
@@ -4794,7 +4794,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       if (__pyx_t_13) {
 
-        /* "astar.py":123
+        /* "astar_cy.pyx":123
  *         for event in pygame.event.get():
  *             if event.type == pygame.QUIT:
  *                 pygame.quit()             # <<<<<<<<<<<<<<
@@ -4823,7 +4823,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-        /* "astar.py":122
+        /* "astar_cy.pyx":122
  *     while not open_set.empty():
  *         for event in pygame.event.get():
  *             if event.type == pygame.QUIT:             # <<<<<<<<<<<<<<
@@ -4832,7 +4832,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
       }
 
-      /* "astar.py":121
+      /* "astar_cy.pyx":121
  * 
  *     while not open_set.empty():
  *         for event in pygame.event.get():             # <<<<<<<<<<<<<<
@@ -4842,7 +4842,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "astar.py":125
+    /* "astar_cy.pyx":125
  *                 pygame.quit()
  * 
  *         current = open_set.get()[2]             # <<<<<<<<<<<<<<
@@ -4872,7 +4872,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_XDECREF_SET(__pyx_v_current, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "astar.py":126
+    /* "astar_cy.pyx":126
  * 
  *         current = open_set.get()[2]
  *         open_set_hash.remove(current)             # <<<<<<<<<<<<<<
@@ -4881,7 +4881,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
     __pyx_t_14 = __Pyx_PySet_Remove(__pyx_v_open_set_hash, __pyx_v_current); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 126, __pyx_L1_error)
 
-    /* "astar.py":128
+    /* "astar_cy.pyx":128
  *         open_set_hash.remove(current)
  * 
  *         if current == end:             # <<<<<<<<<<<<<<
@@ -4893,7 +4893,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     if (__pyx_t_13) {
 
-      /* "astar.py":129
+      /* "astar_cy.pyx":129
  * 
  *         if current == end:
  *             reconstruct_path(came_from, end, draw)             # <<<<<<<<<<<<<<
@@ -4952,7 +4952,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-      /* "astar.py":130
+      /* "astar_cy.pyx":130
  *         if current == end:
  *             reconstruct_path(came_from, end, draw)
  *             end.make_end()             # <<<<<<<<<<<<<<
@@ -4978,7 +4978,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-      /* "astar.py":131
+      /* "astar_cy.pyx":131
  *             reconstruct_path(came_from, end, draw)
  *             end.make_end()
  *             start.make_start()             # <<<<<<<<<<<<<<
@@ -5004,7 +5004,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-      /* "astar.py":132
+      /* "astar_cy.pyx":132
  *             end.make_end()
  *             start.make_start()
  *             return True             # <<<<<<<<<<<<<<
@@ -5016,7 +5016,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __pyx_r = Py_True;
       goto __pyx_L0;
 
-      /* "astar.py":128
+      /* "astar_cy.pyx":128
  *         open_set_hash.remove(current)
  * 
  *         if current == end:             # <<<<<<<<<<<<<<
@@ -5025,7 +5025,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
     }
 
-    /* "astar.py":134
+    /* "astar_cy.pyx":134
  *             return True
  * 
  *         for neighbor in current.neighbors:             # <<<<<<<<<<<<<<
@@ -5077,7 +5077,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_XDECREF_SET(__pyx_v_neighbor, __pyx_t_10);
       __pyx_t_10 = 0;
 
-      /* "astar.py":135
+      /* "astar_cy.pyx":135
  * 
  *         for neighbor in current.neighbors:
  *             temp_g_score = g_score[current] + 1             # <<<<<<<<<<<<<<
@@ -5092,7 +5092,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_XDECREF_SET(__pyx_v_temp_g_score, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "astar.py":137
+      /* "astar_cy.pyx":137
  *             temp_g_score = g_score[current] + 1
  * 
  *             if temp_g_score < g_score[neighbor]:             # <<<<<<<<<<<<<<
@@ -5107,7 +5107,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       if (__pyx_t_13) {
 
-        /* "astar.py":138
+        /* "astar_cy.pyx":138
  * 
  *             if temp_g_score < g_score[neighbor]:
  *                 came_from[neighbor] = current             # <<<<<<<<<<<<<<
@@ -5116,7 +5116,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
         if (unlikely(PyDict_SetItem(__pyx_v_came_from, __pyx_v_neighbor, __pyx_v_current) < 0)) __PYX_ERR(0, 138, __pyx_L1_error)
 
-        /* "astar.py":139
+        /* "astar_cy.pyx":139
  *             if temp_g_score < g_score[neighbor]:
  *                 came_from[neighbor] = current
  *                 g_score[neighbor] = temp_g_score             # <<<<<<<<<<<<<<
@@ -5125,7 +5125,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
         if (unlikely(PyDict_SetItem(__pyx_v_g_score, __pyx_v_neighbor, __pyx_v_temp_g_score) < 0)) __PYX_ERR(0, 139, __pyx_L1_error)
 
-        /* "astar.py":141
+        /* "astar_cy.pyx":141
  *                 g_score[neighbor] = temp_g_score
  *                 f_score[neighbor] = temp_g_score + \
  *                     h(neighbor.get_pos(), end.get_pos())             # <<<<<<<<<<<<<<
@@ -5218,7 +5218,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
         }
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "astar.py":140
+        /* "astar_cy.pyx":140
  *                 came_from[neighbor] = current
  *                 g_score[neighbor] = temp_g_score
  *                 f_score[neighbor] = temp_g_score + \             # <<<<<<<<<<<<<<
@@ -5231,7 +5231,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
         if (unlikely(PyDict_SetItem(__pyx_v_f_score, __pyx_v_neighbor, __pyx_t_4) < 0)) __PYX_ERR(0, 140, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "astar.py":142
+        /* "astar_cy.pyx":142
  *                 f_score[neighbor] = temp_g_score + \
  *                     h(neighbor.get_pos(), end.get_pos())
  *                 if neighbor not in open_set_hash:             # <<<<<<<<<<<<<<
@@ -5242,7 +5242,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
         __pyx_t_12 = (__pyx_t_13 != 0);
         if (__pyx_t_12) {
 
-          /* "astar.py":143
+          /* "astar_cy.pyx":143
  *                     h(neighbor.get_pos(), end.get_pos())
  *                 if neighbor not in open_set_hash:
  *                     count += 1             # <<<<<<<<<<<<<<
@@ -5254,7 +5254,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
           __Pyx_DECREF_SET(__pyx_v_count, __pyx_t_4);
           __pyx_t_4 = 0;
 
-          /* "astar.py":144
+          /* "astar_cy.pyx":144
  *                 if neighbor not in open_set_hash:
  *                     count += 1
  *                     open_set.put((f_score[neighbor], count, neighbor))             # <<<<<<<<<<<<<<
@@ -5294,7 +5294,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "astar.py":145
+          /* "astar_cy.pyx":145
  *                     count += 1
  *                     open_set.put((f_score[neighbor], count, neighbor))
  *                     open_set_hash.add(neighbor)             # <<<<<<<<<<<<<<
@@ -5303,7 +5303,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
           __pyx_t_14 = PySet_Add(__pyx_v_open_set_hash, __pyx_v_neighbor); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 145, __pyx_L1_error)
 
-          /* "astar.py":146
+          /* "astar_cy.pyx":146
  *                     open_set.put((f_score[neighbor], count, neighbor))
  *                     open_set_hash.add(neighbor)
  *                     neighbor.make_open()             # <<<<<<<<<<<<<<
@@ -5329,7 +5329,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "astar.py":142
+          /* "astar_cy.pyx":142
  *                 f_score[neighbor] = temp_g_score + \
  *                     h(neighbor.get_pos(), end.get_pos())
  *                 if neighbor not in open_set_hash:             # <<<<<<<<<<<<<<
@@ -5338,7 +5338,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
         }
 
-        /* "astar.py":137
+        /* "astar_cy.pyx":137
  *             temp_g_score = g_score[current] + 1
  * 
  *             if temp_g_score < g_score[neighbor]:             # <<<<<<<<<<<<<<
@@ -5347,7 +5347,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
       }
 
-      /* "astar.py":134
+      /* "astar_cy.pyx":134
  *             return True
  * 
  *         for neighbor in current.neighbors:             # <<<<<<<<<<<<<<
@@ -5357,7 +5357,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "astar.py":148
+    /* "astar_cy.pyx":148
  *                     neighbor.make_open()
  * 
  *         draw()             # <<<<<<<<<<<<<<
@@ -5382,7 +5382,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "astar.py":150
+    /* "astar_cy.pyx":150
  *         draw()
  * 
  *         if current != start:             # <<<<<<<<<<<<<<
@@ -5394,7 +5394,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (__pyx_t_12) {
 
-      /* "astar.py":151
+      /* "astar_cy.pyx":151
  * 
  *         if current != start:
  *             current.make_closed()             # <<<<<<<<<<<<<<
@@ -5420,7 +5420,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "astar.py":150
+      /* "astar_cy.pyx":150
  *         draw()
  * 
  *         if current != start:             # <<<<<<<<<<<<<<
@@ -5430,7 +5430,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
     }
   }
 
-  /* "astar.py":153
+  /* "astar_cy.pyx":153
  *             current.make_closed()
  * 
  *     return False             # <<<<<<<<<<<<<<
@@ -5442,7 +5442,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_r = Py_False;
   goto __pyx_L0;
 
-  /* "astar.py":108
+  /* "astar_cy.pyx":108
  * 
  * 
  * def algorithm(draw, grid, start, end):             # <<<<<<<<<<<<<<
@@ -5459,7 +5459,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_15);
-  __Pyx_AddTraceback("astar.algorithm", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.algorithm", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_count);
@@ -5481,7 +5481,7 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
   return __pyx_r;
 }
 
-/* "astar.py":156
+/* "astar_cy.pyx":156
  * 
  * 
  * def make_grid(rows, width):             # <<<<<<<<<<<<<<
@@ -5490,9 +5490,9 @@ static PyObject *__pyx_pf_5astar_4algorithm(CYTHON_UNUSED PyObject *__pyx_self, 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_7make_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_7make_grid = {"make_grid", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_7make_grid, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_7make_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_7make_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_7make_grid = {"make_grid", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_7make_grid, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_7make_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_rows = 0;
   PyObject *__pyx_v_width = 0;
   int __pyx_lineno = 0;
@@ -5543,18 +5543,18 @@ static PyObject *__pyx_pw_5astar_7make_grid(PyObject *__pyx_self, PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("make_grid", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 156, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.make_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.make_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_6make_grid(__pyx_self, __pyx_v_rows, __pyx_v_width);
+  __pyx_r = __pyx_pf_8astar_cy_6make_grid(__pyx_self, __pyx_v_rows, __pyx_v_width);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
+static PyObject *__pyx_pf_8astar_cy_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
   PyObject *__pyx_v_grid = NULL;
   PyObject *__pyx_v_gap = NULL;
   PyObject *__pyx_v_i = NULL;
@@ -5579,7 +5579,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_grid", 0);
 
-  /* "astar.py":157
+  /* "astar_cy.pyx":157
  * 
  * def make_grid(rows, width):
  *     grid = []             # <<<<<<<<<<<<<<
@@ -5591,7 +5591,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_grid = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "astar.py":158
+  /* "astar_cy.pyx":158
  * def make_grid(rows, width):
  *     grid = []
  *     gap = width // rows             # <<<<<<<<<<<<<<
@@ -5603,7 +5603,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_gap = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "astar.py":159
+  /* "astar_cy.pyx":159
  *     grid = []
  *     gap = width // rows
  *     for i in range(rows):             # <<<<<<<<<<<<<<
@@ -5655,7 +5655,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "astar.py":160
+    /* "astar_cy.pyx":160
  *     gap = width // rows
  *     for i in range(rows):
  *         grid.append([])             # <<<<<<<<<<<<<<
@@ -5667,7 +5667,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
     __pyx_t_5 = __Pyx_PyList_Append(__pyx_v_grid, __pyx_t_1); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 160, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "astar.py":161
+    /* "astar_cy.pyx":161
  *     for i in range(rows):
  *         grid.append([])
  *         for j in range(rows):             # <<<<<<<<<<<<<<
@@ -5719,7 +5719,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "astar.py":162
+      /* "astar_cy.pyx":162
  *         grid.append([])
  *         for j in range(rows):
  *             spot = Spot(i, j, gap, rows)             # <<<<<<<<<<<<<<
@@ -5782,7 +5782,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_XDECREF_SET(__pyx_v_spot, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "astar.py":163
+      /* "astar_cy.pyx":163
  *         for j in range(rows):
  *             spot = Spot(i, j, gap, rows)
  *             grid[i].append(spot)             # <<<<<<<<<<<<<<
@@ -5794,7 +5794,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
       __pyx_t_5 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_v_spot); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 163, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "astar.py":161
+      /* "astar_cy.pyx":161
  *     for i in range(rows):
  *         grid.append([])
  *         for j in range(rows):             # <<<<<<<<<<<<<<
@@ -5804,7 +5804,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "astar.py":159
+    /* "astar_cy.pyx":159
  *     grid = []
  *     gap = width // rows
  *     for i in range(rows):             # <<<<<<<<<<<<<<
@@ -5814,7 +5814,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "astar.py":165
+  /* "astar_cy.pyx":165
  *             grid[i].append(spot)
  * 
  *     return grid             # <<<<<<<<<<<<<<
@@ -5826,7 +5826,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_r = __pyx_v_grid;
   goto __pyx_L0;
 
-  /* "astar.py":156
+  /* "astar_cy.pyx":156
  * 
  * 
  * def make_grid(rows, width):             # <<<<<<<<<<<<<<
@@ -5842,7 +5842,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("astar.make_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.make_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_grid);
@@ -5855,7 +5855,7 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   return __pyx_r;
 }
 
-/* "astar.py":168
+/* "astar_cy.pyx":168
  * 
  * 
  * def draw_grid(win, rows, width):             # <<<<<<<<<<<<<<
@@ -5864,9 +5864,9 @@ static PyObject *__pyx_pf_5astar_6make_grid(CYTHON_UNUSED PyObject *__pyx_self, 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_9draw_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_9draw_grid = {"draw_grid", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_9draw_grid, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_9draw_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_9draw_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_9draw_grid = {"draw_grid", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_9draw_grid, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_9draw_grid(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_win = 0;
   PyObject *__pyx_v_rows = 0;
   PyObject *__pyx_v_width = 0;
@@ -5928,18 +5928,18 @@ static PyObject *__pyx_pw_5astar_9draw_grid(PyObject *__pyx_self, PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("draw_grid", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 168, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.draw_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.draw_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_8draw_grid(__pyx_self, __pyx_v_win, __pyx_v_rows, __pyx_v_width);
+  __pyx_r = __pyx_pf_8astar_cy_8draw_grid(__pyx_self, __pyx_v_win, __pyx_v_rows, __pyx_v_width);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
+static PyObject *__pyx_pf_8astar_cy_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
   PyObject *__pyx_v_gap = NULL;
   PyObject *__pyx_v_i = NULL;
   PyObject *__pyx_v_j = NULL;
@@ -5964,7 +5964,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("draw_grid", 0);
 
-  /* "astar.py":169
+  /* "astar_cy.pyx":169
  * 
  * def draw_grid(win, rows, width):
  *     gap = width // rows             # <<<<<<<<<<<<<<
@@ -5976,7 +5976,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_v_gap = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "astar.py":170
+  /* "astar_cy.pyx":170
  * def draw_grid(win, rows, width):
  *     gap = width // rows
  *     for i in range(rows):             # <<<<<<<<<<<<<<
@@ -6028,7 +6028,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "astar.py":171
+    /* "astar_cy.pyx":171
  *     gap = width // rows
  *     for i in range(rows):
  *         pygame.draw.line(win, GREY, (0, i * gap), (width, i * gap))             # <<<<<<<<<<<<<<
@@ -6124,7 +6124,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "astar.py":172
+    /* "astar_cy.pyx":172
  *     for i in range(rows):
  *         pygame.draw.line(win, GREY, (0, i * gap), (width, i * gap))
  *         for j in range(rows):             # <<<<<<<<<<<<<<
@@ -6176,7 +6176,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "astar.py":173
+      /* "astar_cy.pyx":173
  *         pygame.draw.line(win, GREY, (0, i * gap), (width, i * gap))
  *         for j in range(rows):
  *             pygame.draw.line(win, GREY, (j * gap, 0), (j * gap, width))             # <<<<<<<<<<<<<<
@@ -6272,7 +6272,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "astar.py":172
+      /* "astar_cy.pyx":172
  *     for i in range(rows):
  *         pygame.draw.line(win, GREY, (0, i * gap), (width, i * gap))
  *         for j in range(rows):             # <<<<<<<<<<<<<<
@@ -6282,7 +6282,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "astar.py":170
+    /* "astar_cy.pyx":170
  * def draw_grid(win, rows, width):
  *     gap = width // rows
  *     for i in range(rows):             # <<<<<<<<<<<<<<
@@ -6292,7 +6292,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "astar.py":168
+  /* "astar_cy.pyx":168
  * 
  * 
  * def draw_grid(win, rows, width):             # <<<<<<<<<<<<<<
@@ -6313,7 +6313,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_14);
-  __Pyx_AddTraceback("astar.draw_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.draw_grid", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_gap);
@@ -6324,7 +6324,7 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
   return __pyx_r;
 }
 
-/* "astar.py":176
+/* "astar_cy.pyx":176
  * 
  * 
  * def draw(win, grid, rows, width):             # <<<<<<<<<<<<<<
@@ -6333,9 +6333,9 @@ static PyObject *__pyx_pf_5astar_8draw_grid(CYTHON_UNUSED PyObject *__pyx_self, 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_11draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_11draw = {"draw", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_11draw, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_11draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_11draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_11draw = {"draw", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_11draw, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_11draw(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_win = 0;
   PyObject *__pyx_v_grid = 0;
   PyObject *__pyx_v_rows = 0;
@@ -6408,18 +6408,18 @@ static PyObject *__pyx_pw_5astar_11draw(PyObject *__pyx_self, PyObject *__pyx_ar
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("draw", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 176, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_10draw(__pyx_self, __pyx_v_win, __pyx_v_grid, __pyx_v_rows, __pyx_v_width);
+  __pyx_r = __pyx_pf_8astar_cy_10draw(__pyx_self, __pyx_v_win, __pyx_v_grid, __pyx_v_rows, __pyx_v_width);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_grid, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
+static PyObject *__pyx_pf_8astar_cy_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_grid, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
   PyObject *__pyx_v_row = NULL;
   PyObject *__pyx_v_spot = NULL;
   PyObject *__pyx_r = NULL;
@@ -6439,7 +6439,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("draw", 0);
 
-  /* "astar.py":177
+  /* "astar_cy.pyx":177
  * 
  * def draw(win, grid, rows, width):
  *     win.fill(WHITE)             # <<<<<<<<<<<<<<
@@ -6468,7 +6468,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":179
+  /* "astar_cy.pyx":179
  *     win.fill(WHITE)
  * 
  *     for row in grid:             # <<<<<<<<<<<<<<
@@ -6517,7 +6517,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
     __Pyx_XDECREF_SET(__pyx_v_row, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "astar.py":180
+    /* "astar_cy.pyx":180
  * 
  *     for row in grid:
  *         for spot in row:             # <<<<<<<<<<<<<<
@@ -6566,7 +6566,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_XDECREF_SET(__pyx_v_spot, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "astar.py":181
+      /* "astar_cy.pyx":181
  *     for row in grid:
  *         for spot in row:
  *             spot.draw(win)             # <<<<<<<<<<<<<<
@@ -6592,7 +6592,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "astar.py":180
+      /* "astar_cy.pyx":180
  * 
  *     for row in grid:
  *         for spot in row:             # <<<<<<<<<<<<<<
@@ -6602,7 +6602,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "astar.py":179
+    /* "astar_cy.pyx":179
  *     win.fill(WHITE)
  * 
  *     for row in grid:             # <<<<<<<<<<<<<<
@@ -6612,7 +6612,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":183
+  /* "astar_cy.pyx":183
  *             spot.draw(win)
  * 
  *     draw_grid(win, rows, width)             # <<<<<<<<<<<<<<
@@ -6671,7 +6671,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":184
+  /* "astar_cy.pyx":184
  * 
  *     draw_grid(win, rows, width)
  *     pygame.display.update()             # <<<<<<<<<<<<<<
@@ -6703,7 +6703,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":176
+  /* "astar_cy.pyx":176
  * 
  * 
  * def draw(win, grid, rows, width):             # <<<<<<<<<<<<<<
@@ -6720,7 +6720,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("astar.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.draw", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_row);
@@ -6730,7 +6730,7 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   return __pyx_r;
 }
 
-/* "astar.py":187
+/* "astar_cy.pyx":187
  * 
  * 
  * def get_clicked_pos(pos, rows, width):             # <<<<<<<<<<<<<<
@@ -6739,9 +6739,9 @@ static PyObject *__pyx_pf_5astar_10draw(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_13get_clicked_pos(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_13get_clicked_pos = {"get_clicked_pos", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_13get_clicked_pos, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_13get_clicked_pos(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_13get_clicked_pos(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_13get_clicked_pos = {"get_clicked_pos", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_13get_clicked_pos, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_13get_clicked_pos(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_pos = 0;
   PyObject *__pyx_v_rows = 0;
   PyObject *__pyx_v_width = 0;
@@ -6803,18 +6803,18 @@ static PyObject *__pyx_pw_5astar_13get_clicked_pos(PyObject *__pyx_self, PyObjec
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("get_clicked_pos", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 187, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.get_clicked_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.get_clicked_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_12get_clicked_pos(__pyx_self, __pyx_v_pos, __pyx_v_rows, __pyx_v_width);
+  __pyx_r = __pyx_pf_8astar_cy_12get_clicked_pos(__pyx_self, __pyx_v_pos, __pyx_v_rows, __pyx_v_width);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_pos, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
+static PyObject *__pyx_pf_8astar_cy_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_pos, PyObject *__pyx_v_rows, PyObject *__pyx_v_width) {
   PyObject *__pyx_v_gap = NULL;
   PyObject *__pyx_v_y = NULL;
   PyObject *__pyx_v_x = NULL;
@@ -6831,7 +6831,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_clicked_pos", 0);
 
-  /* "astar.py":188
+  /* "astar_cy.pyx":188
  * 
  * def get_clicked_pos(pos, rows, width):
  *     gap = width // rows             # <<<<<<<<<<<<<<
@@ -6843,7 +6843,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   __pyx_v_gap = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "astar.py":189
+  /* "astar_cy.pyx":189
  * def get_clicked_pos(pos, rows, width):
  *     gap = width // rows
  *     y, x = pos             # <<<<<<<<<<<<<<
@@ -6899,7 +6899,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   __pyx_v_x = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "astar.py":191
+  /* "astar_cy.pyx":191
  *     y, x = pos
  * 
  *     row = y // gap             # <<<<<<<<<<<<<<
@@ -6911,7 +6911,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   __pyx_v_row = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "astar.py":192
+  /* "astar_cy.pyx":192
  * 
  *     row = y // gap
  *     col = x // gap             # <<<<<<<<<<<<<<
@@ -6923,7 +6923,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   __pyx_v_col = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "astar.py":194
+  /* "astar_cy.pyx":194
  *     col = x // gap
  * 
  *     return row, col             # <<<<<<<<<<<<<<
@@ -6943,7 +6943,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "astar.py":187
+  /* "astar_cy.pyx":187
  * 
  * 
  * def get_clicked_pos(pos, rows, width):             # <<<<<<<<<<<<<<
@@ -6956,7 +6956,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("astar.get_clicked_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.get_clicked_pos", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_gap);
@@ -6969,7 +6969,7 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "astar.py":197
+/* "astar_cy.pyx":197
  * 
  * 
  * def main(win, width):             # <<<<<<<<<<<<<<
@@ -6978,9 +6978,9 @@ static PyObject *__pyx_pf_5astar_12get_clicked_pos(CYTHON_UNUSED PyObject *__pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_15main(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_15main = {"main", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_5astar_15main, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_5astar_15main(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_8astar_cy_15main(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_15main = {"main", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_8astar_cy_15main, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8astar_cy_15main(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_win = 0;
   PyObject *__pyx_v_width = 0;
   int __pyx_lineno = 0;
@@ -7031,18 +7031,18 @@ static PyObject *__pyx_pw_5astar_15main(PyObject *__pyx_self, PyObject *__pyx_ar
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("main", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 197, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("astar.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5astar_14main(__pyx_self, __pyx_v_win, __pyx_v_width);
+  __pyx_r = __pyx_pf_8astar_cy_14main(__pyx_self, __pyx_v_win, __pyx_v_width);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "astar.py":242
+/* "astar_cy.pyx":242
  *                             spot.update_neighbors(grid)
  * 
  *                     algorithm(lambda: draw(win, grid, ROWS, width),             # <<<<<<<<<<<<<<
@@ -7051,9 +7051,9 @@ static PyObject *__pyx_pw_5astar_15main(PyObject *__pyx_self, PyObject *__pyx_ar
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5astar_4main_lambda(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyMethodDef __pyx_mdef_5astar_4main_lambda = {"lambda", (PyCFunction)__pyx_pw_5astar_4main_lambda, METH_NOARGS, 0};
-static PyObject *__pyx_pw_5astar_4main_lambda(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_8astar_cy_4main_lambda(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyMethodDef __pyx_mdef_8astar_cy_4main_lambda = {"lambda", (PyCFunction)__pyx_pw_8astar_cy_4main_lambda, METH_NOARGS, 0};
+static PyObject *__pyx_pw_8astar_cy_4main_lambda(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("lambda (wrapper)", 0);
@@ -7065,8 +7065,8 @@ static PyObject *__pyx_pw_5astar_4main_lambda(PyObject *__pyx_self, CYTHON_UNUSE
 }
 
 static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self) {
-  struct __pyx_obj_5astar___pyx_scope_struct__main *__pyx_cur_scope;
-  struct __pyx_obj_5astar___pyx_scope_struct__main *__pyx_outer_scope;
+  struct __pyx_obj_8astar_cy___pyx_scope_struct__main *__pyx_cur_scope;
+  struct __pyx_obj_8astar_cy___pyx_scope_struct__main *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7079,7 +7079,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self) {
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("lambda", 0);
-  __pyx_outer_scope = (struct __pyx_obj_5astar___pyx_scope_struct__main *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_8astar_cy___pyx_scope_struct__main *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_draw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 242, __pyx_L1_error)
@@ -7153,7 +7153,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self) {
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("astar.main.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.main.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7161,7 +7161,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self) {
   return __pyx_r;
 }
 
-/* "astar.py":197
+/* "astar_cy.pyx":197
  * 
  * 
  * def main(win, width):             # <<<<<<<<<<<<<<
@@ -7169,8 +7169,8 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self) {
  *     grid = make_grid(ROWS, width)
  */
 
-static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_width) {
-  struct __pyx_obj_5astar___pyx_scope_struct__main *__pyx_cur_scope;
+static PyObject *__pyx_pf_8astar_cy_14main(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_win, PyObject *__pyx_v_width) {
+  struct __pyx_obj_8astar_cy___pyx_scope_struct__main *__pyx_cur_scope;
   PyObject *__pyx_v_start = NULL;
   PyObject *__pyx_v_end = NULL;
   int __pyx_v_run;
@@ -7202,9 +7202,9 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("main", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5astar___pyx_scope_struct__main *)__pyx_tp_new_5astar___pyx_scope_struct__main(__pyx_ptype_5astar___pyx_scope_struct__main, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_8astar_cy___pyx_scope_struct__main *)__pyx_tp_new_8astar_cy___pyx_scope_struct__main(__pyx_ptype_8astar_cy___pyx_scope_struct__main, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5astar___pyx_scope_struct__main *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_8astar_cy___pyx_scope_struct__main *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 197, __pyx_L1_error)
   } else {
@@ -7217,7 +7217,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_width);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_width);
 
-  /* "astar.py":198
+  /* "astar_cy.pyx":198
  * 
  * def main(win, width):
  *     ROWS = 30             # <<<<<<<<<<<<<<
@@ -7226,7 +7226,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
   __pyx_cur_scope->__pyx_v_ROWS = 30;
 
-  /* "astar.py":199
+  /* "astar_cy.pyx":199
  * def main(win, width):
  *     ROWS = 30
  *     grid = make_grid(ROWS, width)             # <<<<<<<<<<<<<<
@@ -7288,7 +7288,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __pyx_cur_scope->__pyx_v_grid = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "astar.py":201
+  /* "astar_cy.pyx":201
  *     grid = make_grid(ROWS, width)
  * 
  *     start = None             # <<<<<<<<<<<<<<
@@ -7298,7 +7298,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_INCREF(Py_None);
   __pyx_v_start = Py_None;
 
-  /* "astar.py":202
+  /* "astar_cy.pyx":202
  * 
  *     start = None
  *     end = None             # <<<<<<<<<<<<<<
@@ -7308,7 +7308,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_INCREF(Py_None);
   __pyx_v_end = Py_None;
 
-  /* "astar.py":204
+  /* "astar_cy.pyx":204
  *     end = None
  * 
  *     run = True             # <<<<<<<<<<<<<<
@@ -7317,7 +7317,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
   __pyx_v_run = 1;
 
-  /* "astar.py":205
+  /* "astar_cy.pyx":205
  * 
  *     run = True
  *     while run:             # <<<<<<<<<<<<<<
@@ -7328,7 +7328,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
     __pyx_t_7 = (__pyx_v_run != 0);
     if (!__pyx_t_7) break;
 
-    /* "astar.py":206
+    /* "astar_cy.pyx":206
  *     run = True
  *     while run:
  *         draw(win, grid, ROWS, width)             # <<<<<<<<<<<<<<
@@ -7394,7 +7394,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "astar.py":207
+    /* "astar_cy.pyx":207
  *     while run:
  *         draw(win, grid, ROWS, width)
  *         for event in pygame.event.get():             # <<<<<<<<<<<<<<
@@ -7467,7 +7467,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_XDECREF_SET(__pyx_v_event, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "astar.py":208
+      /* "astar_cy.pyx":208
  *         draw(win, grid, ROWS, width)
  *         for event in pygame.event.get():
  *             if event.type == pygame.QUIT:             # <<<<<<<<<<<<<<
@@ -7488,7 +7488,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (__pyx_t_7) {
 
-        /* "astar.py":209
+        /* "astar_cy.pyx":209
  *         for event in pygame.event.get():
  *             if event.type == pygame.QUIT:
  *                 run = False             # <<<<<<<<<<<<<<
@@ -7497,7 +7497,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
         __pyx_v_run = 0;
 
-        /* "astar.py":208
+        /* "astar_cy.pyx":208
  *         draw(win, grid, ROWS, width)
  *         for event in pygame.event.get():
  *             if event.type == pygame.QUIT:             # <<<<<<<<<<<<<<
@@ -7506,7 +7506,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
       }
 
-      /* "astar.py":211
+      /* "astar_cy.pyx":211
  *                 run = False
  * 
  *             if pygame.mouse.get_pressed()[0]:  # LEFT             # <<<<<<<<<<<<<<
@@ -7543,7 +7543,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       if (__pyx_t_7) {
 
-        /* "astar.py":212
+        /* "astar_cy.pyx":212
  * 
  *             if pygame.mouse.get_pressed()[0]:  # LEFT
  *                 pos = pygame.mouse.get_pos()             # <<<<<<<<<<<<<<
@@ -7576,7 +7576,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_XDECREF_SET(__pyx_v_pos, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "astar.py":213
+        /* "astar_cy.pyx":213
  *             if pygame.mouse.get_pressed()[0]:  # LEFT
  *                 pos = pygame.mouse.get_pos()
  *                 row, col = get_clicked_pos(pos, ROWS, width)             # <<<<<<<<<<<<<<
@@ -7688,7 +7688,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_XDECREF_SET(__pyx_v_col, __pyx_t_10);
         __pyx_t_10 = 0;
 
-        /* "astar.py":214
+        /* "astar_cy.pyx":214
  *                 pos = pygame.mouse.get_pos()
  *                 row, col = get_clicked_pos(pos, ROWS, width)
  *                 spot = grid[row][col]             # <<<<<<<<<<<<<<
@@ -7703,7 +7703,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_XDECREF_SET(__pyx_v_spot, __pyx_t_10);
         __pyx_t_10 = 0;
 
-        /* "astar.py":215
+        /* "astar_cy.pyx":215
  *                 row, col = get_clicked_pos(pos, ROWS, width)
  *                 spot = grid[row][col]
  *                 if not start and spot != end:             # <<<<<<<<<<<<<<
@@ -7724,7 +7724,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __pyx_L12_bool_binop_done:;
         if (__pyx_t_7) {
 
-          /* "astar.py":216
+          /* "astar_cy.pyx":216
  *                 spot = grid[row][col]
  *                 if not start and spot != end:
  *                     start = spot             # <<<<<<<<<<<<<<
@@ -7734,7 +7734,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_INCREF(__pyx_v_spot);
           __Pyx_DECREF_SET(__pyx_v_start, __pyx_v_spot);
 
-          /* "astar.py":217
+          /* "astar_cy.pyx":217
  *                 if not start and spot != end:
  *                     start = spot
  *                     start.make_start()             # <<<<<<<<<<<<<<
@@ -7760,7 +7760,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-          /* "astar.py":215
+          /* "astar_cy.pyx":215
  *                 row, col = get_clicked_pos(pos, ROWS, width)
  *                 spot = grid[row][col]
  *                 if not start and spot != end:             # <<<<<<<<<<<<<<
@@ -7770,7 +7770,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           goto __pyx_L11;
         }
 
-        /* "astar.py":219
+        /* "astar_cy.pyx":219
  *                     start.make_start()
  * 
  *                 elif not end and spot != start:             # <<<<<<<<<<<<<<
@@ -7791,7 +7791,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __pyx_L14_bool_binop_done:;
         if (__pyx_t_7) {
 
-          /* "astar.py":220
+          /* "astar_cy.pyx":220
  * 
  *                 elif not end and spot != start:
  *                     end = spot             # <<<<<<<<<<<<<<
@@ -7801,7 +7801,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_INCREF(__pyx_v_spot);
           __Pyx_DECREF_SET(__pyx_v_end, __pyx_v_spot);
 
-          /* "astar.py":221
+          /* "astar_cy.pyx":221
  *                 elif not end and spot != start:
  *                     end = spot
  *                     end.make_end()             # <<<<<<<<<<<<<<
@@ -7827,7 +7827,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-          /* "astar.py":219
+          /* "astar_cy.pyx":219
  *                     start.make_start()
  * 
  *                 elif not end and spot != start:             # <<<<<<<<<<<<<<
@@ -7837,7 +7837,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           goto __pyx_L11;
         }
 
-        /* "astar.py":223
+        /* "astar_cy.pyx":223
  *                     end.make_end()
  * 
  *                 elif spot != end and spot != start:             # <<<<<<<<<<<<<<
@@ -7859,7 +7859,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __pyx_L16_bool_binop_done:;
         if (__pyx_t_7) {
 
-          /* "astar.py":224
+          /* "astar_cy.pyx":224
  * 
  *                 elif spot != end and spot != start:
  *                     spot.make_barrier()             # <<<<<<<<<<<<<<
@@ -7885,7 +7885,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-          /* "astar.py":223
+          /* "astar_cy.pyx":223
  *                     end.make_end()
  * 
  *                 elif spot != end and spot != start:             # <<<<<<<<<<<<<<
@@ -7895,7 +7895,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         }
         __pyx_L11:;
 
-        /* "astar.py":211
+        /* "astar_cy.pyx":211
  *                 run = False
  * 
  *             if pygame.mouse.get_pressed()[0]:  # LEFT             # <<<<<<<<<<<<<<
@@ -7905,7 +7905,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         goto __pyx_L8;
       }
 
-      /* "astar.py":226
+      /* "astar_cy.pyx":226
  *                     spot.make_barrier()
  * 
  *             elif pygame.mouse.get_pressed()[2]:  # RIGHT             # <<<<<<<<<<<<<<
@@ -7942,7 +7942,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       if (__pyx_t_7) {
 
-        /* "astar.py":227
+        /* "astar_cy.pyx":227
  * 
  *             elif pygame.mouse.get_pressed()[2]:  # RIGHT
  *                 pos = pygame.mouse.get_pos()             # <<<<<<<<<<<<<<
@@ -7975,7 +7975,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_XDECREF_SET(__pyx_v_pos, __pyx_t_6);
         __pyx_t_6 = 0;
 
-        /* "astar.py":228
+        /* "astar_cy.pyx":228
  *             elif pygame.mouse.get_pressed()[2]:  # RIGHT
  *                 pos = pygame.mouse.get_pos()
  *                 row, col = get_clicked_pos(pos, ROWS, width)             # <<<<<<<<<<<<<<
@@ -8087,7 +8087,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_XDECREF_SET(__pyx_v_col, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "astar.py":229
+        /* "astar_cy.pyx":229
  *                 pos = pygame.mouse.get_pos()
  *                 row, col = get_clicked_pos(pos, ROWS, width)
  *                 spot = grid[row][col]             # <<<<<<<<<<<<<<
@@ -8102,7 +8102,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_XDECREF_SET(__pyx_v_spot, __pyx_t_3);
         __pyx_t_3 = 0;
 
-        /* "astar.py":230
+        /* "astar_cy.pyx":230
  *                 row, col = get_clicked_pos(pos, ROWS, width)
  *                 spot = grid[row][col]
  *                 spot.reset()             # <<<<<<<<<<<<<<
@@ -8128,7 +8128,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "astar.py":231
+        /* "astar_cy.pyx":231
  *                 spot = grid[row][col]
  *                 spot.reset()
  *                 if spot == start:             # <<<<<<<<<<<<<<
@@ -8140,7 +8140,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (__pyx_t_7) {
 
-          /* "astar.py":232
+          /* "astar_cy.pyx":232
  *                 spot.reset()
  *                 if spot == start:
  *                     start = None             # <<<<<<<<<<<<<<
@@ -8150,7 +8150,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_INCREF(Py_None);
           __Pyx_DECREF_SET(__pyx_v_start, Py_None);
 
-          /* "astar.py":231
+          /* "astar_cy.pyx":231
  *                 spot = grid[row][col]
  *                 spot.reset()
  *                 if spot == start:             # <<<<<<<<<<<<<<
@@ -8160,7 +8160,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           goto __pyx_L20;
         }
 
-        /* "astar.py":233
+        /* "astar_cy.pyx":233
  *                 if spot == start:
  *                     start = None
  *                 elif spot == end:             # <<<<<<<<<<<<<<
@@ -8172,7 +8172,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (__pyx_t_7) {
 
-          /* "astar.py":234
+          /* "astar_cy.pyx":234
  *                     start = None
  *                 elif spot == end:
  *                     end = None             # <<<<<<<<<<<<<<
@@ -8182,7 +8182,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_INCREF(Py_None);
           __Pyx_DECREF_SET(__pyx_v_end, Py_None);
 
-          /* "astar.py":233
+          /* "astar_cy.pyx":233
  *                 if spot == start:
  *                     start = None
  *                 elif spot == end:             # <<<<<<<<<<<<<<
@@ -8192,7 +8192,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         }
         __pyx_L20:;
 
-        /* "astar.py":226
+        /* "astar_cy.pyx":226
  *                     spot.make_barrier()
  * 
  *             elif pygame.mouse.get_pressed()[2]:  # RIGHT             # <<<<<<<<<<<<<<
@@ -8202,7 +8202,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       }
       __pyx_L8:;
 
-      /* "astar.py":236
+      /* "astar_cy.pyx":236
  *                     end = None
  * 
  *             if event.type == pygame.KEYDOWN:             # <<<<<<<<<<<<<<
@@ -8223,7 +8223,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       if (__pyx_t_7) {
 
-        /* "astar.py":237
+        /* "astar_cy.pyx":237
  * 
  *             if event.type == pygame.KEYDOWN:
  *                 if event.key == pygame.K_SPACE and start and end:             # <<<<<<<<<<<<<<
@@ -8258,7 +8258,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __pyx_L23_bool_binop_done:;
         if (__pyx_t_7) {
 
-          /* "astar.py":238
+          /* "astar_cy.pyx":238
  *             if event.type == pygame.KEYDOWN:
  *                 if event.key == pygame.K_SPACE and start and end:
  *                     for row in grid:             # <<<<<<<<<<<<<<
@@ -8307,7 +8307,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
             __Pyx_XDECREF_SET(__pyx_v_row, __pyx_t_3);
             __pyx_t_3 = 0;
 
-            /* "astar.py":239
+            /* "astar_cy.pyx":239
  *                 if event.key == pygame.K_SPACE and start and end:
  *                     for row in grid:
  *                         for spot in row:             # <<<<<<<<<<<<<<
@@ -8356,7 +8356,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
               __Pyx_XDECREF_SET(__pyx_v_spot, __pyx_t_6);
               __pyx_t_6 = 0;
 
-              /* "astar.py":240
+              /* "astar_cy.pyx":240
  *                     for row in grid:
  *                         for spot in row:
  *                             spot.update_neighbors(grid)             # <<<<<<<<<<<<<<
@@ -8382,7 +8382,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
               __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-              /* "astar.py":239
+              /* "astar_cy.pyx":239
  *                 if event.key == pygame.K_SPACE and start and end:
  *                     for row in grid:
  *                         for spot in row:             # <<<<<<<<<<<<<<
@@ -8392,7 +8392,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
             }
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-            /* "astar.py":238
+            /* "astar_cy.pyx":238
  *             if event.type == pygame.KEYDOWN:
  *                 if event.key == pygame.K_SPACE and start and end:
  *                     for row in grid:             # <<<<<<<<<<<<<<
@@ -8402,7 +8402,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           }
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-          /* "astar.py":242
+          /* "astar_cy.pyx":242
  *                             spot.update_neighbors(grid)
  * 
  *                     algorithm(lambda: draw(win, grid, ROWS, width),             # <<<<<<<<<<<<<<
@@ -8411,10 +8411,10 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
           __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_algorithm); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 242, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4main_lambda, 0, __pyx_n_s_main_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_astar, __pyx_d, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 242, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4main_lambda, 0, __pyx_n_s_main_locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_n_s_astar_cy, __pyx_d, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 242, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
 
-          /* "astar.py":243
+          /* "astar_cy.pyx":243
  * 
  *                     algorithm(lambda: draw(win, grid, ROWS, width),
  *                               grid, start, end)             # <<<<<<<<<<<<<<
@@ -8476,7 +8476,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-          /* "astar.py":237
+          /* "astar_cy.pyx":237
  * 
  *             if event.type == pygame.KEYDOWN:
  *                 if event.key == pygame.K_SPACE and start and end:             # <<<<<<<<<<<<<<
@@ -8485,7 +8485,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
         }
 
-        /* "astar.py":245
+        /* "astar_cy.pyx":245
  *                               grid, start, end)
  * 
  *                 if event.key == pygame.K_c:             # <<<<<<<<<<<<<<
@@ -8506,7 +8506,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (__pyx_t_7) {
 
-          /* "astar.py":246
+          /* "astar_cy.pyx":246
  * 
  *                 if event.key == pygame.K_c:
  *                     start = None             # <<<<<<<<<<<<<<
@@ -8516,7 +8516,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_INCREF(Py_None);
           __Pyx_DECREF_SET(__pyx_v_start, Py_None);
 
-          /* "astar.py":247
+          /* "astar_cy.pyx":247
  *                 if event.key == pygame.K_c:
  *                     start = None
  *                     end = None             # <<<<<<<<<<<<<<
@@ -8526,7 +8526,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_INCREF(Py_None);
           __Pyx_DECREF_SET(__pyx_v_end, Py_None);
 
-          /* "astar.py":248
+          /* "astar_cy.pyx":248
  *                     start = None
  *                     end = None
  *                     grid = make_grid(ROWS, width)             # <<<<<<<<<<<<<<
@@ -8589,7 +8589,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
           __Pyx_GIVEREF(__pyx_t_3);
           __pyx_t_3 = 0;
 
-          /* "astar.py":245
+          /* "astar_cy.pyx":245
  *                               grid, start, end)
  * 
  *                 if event.key == pygame.K_c:             # <<<<<<<<<<<<<<
@@ -8598,7 +8598,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
         }
 
-        /* "astar.py":236
+        /* "astar_cy.pyx":236
  *                     end = None
  * 
  *             if event.type == pygame.KEYDOWN:             # <<<<<<<<<<<<<<
@@ -8607,7 +8607,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  */
       }
 
-      /* "astar.py":207
+      /* "astar_cy.pyx":207
  *     while run:
  *         draw(win, grid, ROWS, width)
  *         for event in pygame.event.get():             # <<<<<<<<<<<<<<
@@ -8618,7 +8618,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
 
-  /* "astar.py":250
+  /* "astar_cy.pyx":250
  *                     grid = make_grid(ROWS, width)
  * 
  *     pygame.quit()             # <<<<<<<<<<<<<<
@@ -8647,7 +8647,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "astar.py":197
+  /* "astar_cy.pyx":197
  * 
  * 
  * def main(win, width):             # <<<<<<<<<<<<<<
@@ -8665,7 +8665,7 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("astar.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("astar_cy.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_start);
@@ -8681,14 +8681,14 @@ static PyObject *__pyx_pf_5astar_14main(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   return __pyx_r;
 }
 
-static struct __pyx_obj_5astar___pyx_scope_struct__main *__pyx_freelist_5astar___pyx_scope_struct__main[8];
-static int __pyx_freecount_5astar___pyx_scope_struct__main = 0;
+static struct __pyx_obj_8astar_cy___pyx_scope_struct__main *__pyx_freelist_8astar_cy___pyx_scope_struct__main[8];
+static int __pyx_freecount_8astar_cy___pyx_scope_struct__main = 0;
 
-static PyObject *__pyx_tp_new_5astar___pyx_scope_struct__main(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_8astar_cy___pyx_scope_struct__main(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5astar___pyx_scope_struct__main > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5astar___pyx_scope_struct__main)))) {
-    o = (PyObject*)__pyx_freelist_5astar___pyx_scope_struct__main[--__pyx_freecount_5astar___pyx_scope_struct__main];
-    memset(o, 0, sizeof(struct __pyx_obj_5astar___pyx_scope_struct__main));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_8astar_cy___pyx_scope_struct__main > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_8astar_cy___pyx_scope_struct__main)))) {
+    o = (PyObject*)__pyx_freelist_8astar_cy___pyx_scope_struct__main[--__pyx_freecount_8astar_cy___pyx_scope_struct__main];
+    memset(o, 0, sizeof(struct __pyx_obj_8astar_cy___pyx_scope_struct__main));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -8698,22 +8698,22 @@ static PyObject *__pyx_tp_new_5astar___pyx_scope_struct__main(PyTypeObject *t, C
   return o;
 }
 
-static void __pyx_tp_dealloc_5astar___pyx_scope_struct__main(PyObject *o) {
-  struct __pyx_obj_5astar___pyx_scope_struct__main *p = (struct __pyx_obj_5astar___pyx_scope_struct__main *)o;
+static void __pyx_tp_dealloc_8astar_cy___pyx_scope_struct__main(PyObject *o) {
+  struct __pyx_obj_8astar_cy___pyx_scope_struct__main *p = (struct __pyx_obj_8astar_cy___pyx_scope_struct__main *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_grid);
   Py_CLEAR(p->__pyx_v_width);
   Py_CLEAR(p->__pyx_v_win);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5astar___pyx_scope_struct__main < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5astar___pyx_scope_struct__main)))) {
-    __pyx_freelist_5astar___pyx_scope_struct__main[__pyx_freecount_5astar___pyx_scope_struct__main++] = ((struct __pyx_obj_5astar___pyx_scope_struct__main *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_8astar_cy___pyx_scope_struct__main < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8astar_cy___pyx_scope_struct__main)))) {
+    __pyx_freelist_8astar_cy___pyx_scope_struct__main[__pyx_freecount_8astar_cy___pyx_scope_struct__main++] = ((struct __pyx_obj_8astar_cy___pyx_scope_struct__main *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5astar___pyx_scope_struct__main(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_8astar_cy___pyx_scope_struct__main(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5astar___pyx_scope_struct__main *p = (struct __pyx_obj_5astar___pyx_scope_struct__main *)o;
+  struct __pyx_obj_8astar_cy___pyx_scope_struct__main *p = (struct __pyx_obj_8astar_cy___pyx_scope_struct__main *)o;
   if (p->__pyx_v_grid) {
     e = (*v)(p->__pyx_v_grid, a); if (e) return e;
   }
@@ -8726,9 +8726,9 @@ static int __pyx_tp_traverse_5astar___pyx_scope_struct__main(PyObject *o, visitp
   return 0;
 }
 
-static int __pyx_tp_clear_5astar___pyx_scope_struct__main(PyObject *o) {
+static int __pyx_tp_clear_8astar_cy___pyx_scope_struct__main(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5astar___pyx_scope_struct__main *p = (struct __pyx_obj_5astar___pyx_scope_struct__main *)o;
+  struct __pyx_obj_8astar_cy___pyx_scope_struct__main *p = (struct __pyx_obj_8astar_cy___pyx_scope_struct__main *)o;
   tmp = ((PyObject*)p->__pyx_v_grid);
   p->__pyx_v_grid = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
@@ -8741,12 +8741,12 @@ static int __pyx_tp_clear_5astar___pyx_scope_struct__main(PyObject *o) {
   return 0;
 }
 
-static PyTypeObject __pyx_type_5astar___pyx_scope_struct__main = {
+static PyTypeObject __pyx_type_8astar_cy___pyx_scope_struct__main = {
   PyVarObject_HEAD_INIT(0, 0)
-  "astar.__pyx_scope_struct__main", /*tp_name*/
-  sizeof(struct __pyx_obj_5astar___pyx_scope_struct__main), /*tp_basicsize*/
+  "astar_cy.__pyx_scope_struct__main", /*tp_name*/
+  sizeof(struct __pyx_obj_8astar_cy___pyx_scope_struct__main), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5astar___pyx_scope_struct__main, /*tp_dealloc*/
+  __pyx_tp_dealloc_8astar_cy___pyx_scope_struct__main, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -8773,8 +8773,8 @@ static PyTypeObject __pyx_type_5astar___pyx_scope_struct__main = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5astar___pyx_scope_struct__main, /*tp_traverse*/
-  __pyx_tp_clear_5astar___pyx_scope_struct__main, /*tp_clear*/
+  __pyx_tp_traverse_8astar_cy___pyx_scope_struct__main, /*tp_traverse*/
+  __pyx_tp_clear_8astar_cy___pyx_scope_struct__main, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -8789,7 +8789,7 @@ static PyTypeObject __pyx_type_5astar___pyx_scope_struct__main = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5astar___pyx_scope_struct__main, /*tp_new*/
+  __pyx_tp_new_8astar_cy___pyx_scope_struct__main, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -8817,17 +8817,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_astar(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_astar_cy(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_astar},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_astar_cy},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "astar",
+    "astar_cy",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -8895,8 +8895,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_YELLOW, __pyx_k_YELLOW, sizeof(__pyx_k_YELLOW), 0, 0, 1, 1},
   {&__pyx_n_s_algorithm, __pyx_k_algorithm, sizeof(__pyx_k_algorithm), 0, 0, 1, 1},
   {&__pyx_n_s_append, __pyx_k_append, sizeof(__pyx_k_append), 0, 0, 1, 1},
-  {&__pyx_n_s_astar, __pyx_k_astar, sizeof(__pyx_k_astar), 0, 0, 1, 1},
-  {&__pyx_kp_s_astar_py, __pyx_k_astar_py, sizeof(__pyx_k_astar_py), 0, 0, 1, 0},
+  {&__pyx_n_s_astar_cy, __pyx_k_astar_cy, sizeof(__pyx_k_astar_cy), 0, 0, 1, 1},
+  {&__pyx_kp_s_astar_cy_pyx, __pyx_k_astar_cy_pyx, sizeof(__pyx_k_astar_cy_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_came_from, __pyx_k_came_from, sizeof(__pyx_k_came_from), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_col, __pyx_k_col, sizeof(__pyx_k_col), 0, 0, 1, 1},
@@ -9001,7 +9001,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "astar.py":7
+  /* "astar_cy.pyx":7
  * WIDTH = 600
  * WIN = pygame.display.set_mode((WIDTH, WIDTH))
  * pygame.display.set_caption("A* Path Finding Algorithm")             # <<<<<<<<<<<<<<
@@ -9012,7 +9012,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "astar.py":9
+  /* "astar_cy.pyx":9
  * pygame.display.set_caption("A* Path Finding Algorithm")
  * 
  * RED = (255, 0, 0)             # <<<<<<<<<<<<<<
@@ -9023,7 +9023,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "astar.py":10
+  /* "astar_cy.pyx":10
  * 
  * RED = (255, 0, 0)
  * GREEN = (0, 255, 0)             # <<<<<<<<<<<<<<
@@ -9034,7 +9034,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "astar.py":11
+  /* "astar_cy.pyx":11
  * RED = (255, 0, 0)
  * GREEN = (0, 255, 0)
  * BLUE = (0, 0, 255)             # <<<<<<<<<<<<<<
@@ -9045,7 +9045,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "astar.py":12
+  /* "astar_cy.pyx":12
  * GREEN = (0, 255, 0)
  * BLUE = (0, 0, 255)
  * YELLOW = (255, 255, 0)             # <<<<<<<<<<<<<<
@@ -9056,7 +9056,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "astar.py":13
+  /* "astar_cy.pyx":13
  * BLUE = (0, 0, 255)
  * YELLOW = (255, 255, 0)
  * WHITE = (255, 255, 255)             # <<<<<<<<<<<<<<
@@ -9067,7 +9067,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "astar.py":14
+  /* "astar_cy.pyx":14
  * YELLOW = (255, 255, 0)
  * WHITE = (255, 255, 255)
  * BLACK = (0, 0, 0)             # <<<<<<<<<<<<<<
@@ -9078,7 +9078,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "astar.py":15
+  /* "astar_cy.pyx":15
  * WHITE = (255, 255, 255)
  * BLACK = (0, 0, 0)
  * PURPLE = (128, 0, 128)             # <<<<<<<<<<<<<<
@@ -9089,7 +9089,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "astar.py":16
+  /* "astar_cy.pyx":16
  * BLACK = (0, 0, 0)
  * PURPLE = (128, 0, 128)
  * ORANGE = (255, 165, 0)             # <<<<<<<<<<<<<<
@@ -9100,7 +9100,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "astar.py":17
+  /* "astar_cy.pyx":17
  * PURPLE = (128, 0, 128)
  * ORANGE = (255, 165, 0)
  * GREY = (128, 128, 128)             # <<<<<<<<<<<<<<
@@ -9111,7 +9111,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "astar.py":18
+  /* "astar_cy.pyx":18
  * ORANGE = (255, 165, 0)
  * GREY = (128, 128, 128)
  * TURQUOISE = (64, 224, 208)             # <<<<<<<<<<<<<<
@@ -9122,7 +9122,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "astar.py":22
+  /* "astar_cy.pyx":22
  * 
  * class Spot:
  *     def __init__(self, row, col, width, total_rows):             # <<<<<<<<<<<<<<
@@ -9132,9 +9132,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__12 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_row, __pyx_n_s_col, __pyx_n_s_width, __pyx_n_s_total_rows); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_init, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_init, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 22, __pyx_L1_error)
 
-  /* "astar.py":32
+  /* "astar_cy.pyx":32
  *         self.total_rows = total_rows
  * 
  *     def get_pos(self):             # <<<<<<<<<<<<<<
@@ -9144,9 +9144,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__14 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_get_pos, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_get_pos, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 32, __pyx_L1_error)
 
-  /* "astar.py":35
+  /* "astar_cy.pyx":35
  *         return self.row, self.col
  * 
  *     def is_closed(self):             # <<<<<<<<<<<<<<
@@ -9156,9 +9156,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__16 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_is_closed, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_is_closed, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 35, __pyx_L1_error)
 
-  /* "astar.py":38
+  /* "astar_cy.pyx":38
  *         return self.color == RED
  * 
  *     def is_open(self):             # <<<<<<<<<<<<<<
@@ -9168,9 +9168,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__18 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_is_open, 38, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_is_open, 38, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 38, __pyx_L1_error)
 
-  /* "astar.py":41
+  /* "astar_cy.pyx":41
  *         return self.color == GREEN
  * 
  *     def is_barrier(self):             # <<<<<<<<<<<<<<
@@ -9180,9 +9180,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__20 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_is_barrier, 41, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_is_barrier, 41, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 41, __pyx_L1_error)
 
-  /* "astar.py":44
+  /* "astar_cy.pyx":44
  *         return self.color == BLACK
  * 
  *     def is_start(self):             # <<<<<<<<<<<<<<
@@ -9192,9 +9192,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__22 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
-  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_is_start, 44, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_is_start, 44, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 44, __pyx_L1_error)
 
-  /* "astar.py":47
+  /* "astar_cy.pyx":47
  *         return self.color == ORANGE
  * 
  *     def is_end(self):             # <<<<<<<<<<<<<<
@@ -9204,9 +9204,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_is_end, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_is_end, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 47, __pyx_L1_error)
 
-  /* "astar.py":50
+  /* "astar_cy.pyx":50
  *         return self.color == TURQUOISE
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
@@ -9216,9 +9216,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__26 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
-  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_reset, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_reset, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 50, __pyx_L1_error)
 
-  /* "astar.py":53
+  /* "astar_cy.pyx":53
  *         self.color = WHITE
  * 
  *     def make_start(self):             # <<<<<<<<<<<<<<
@@ -9228,9 +9228,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__28 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
-  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_make_start, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_make_start, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 53, __pyx_L1_error)
 
-  /* "astar.py":56
+  /* "astar_cy.pyx":56
  *         self.color = ORANGE
  * 
  *     def make_closed(self):             # <<<<<<<<<<<<<<
@@ -9240,9 +9240,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__30 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
-  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_make_closed, 56, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_make_closed, 56, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 56, __pyx_L1_error)
 
-  /* "astar.py":59
+  /* "astar_cy.pyx":59
  *         self.color = RED
  * 
  *     def make_open(self):             # <<<<<<<<<<<<<<
@@ -9252,9 +9252,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__32 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
-  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_make_open, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_make_open, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 59, __pyx_L1_error)
 
-  /* "astar.py":62
+  /* "astar_cy.pyx":62
  *         self.color = GREEN
  * 
  *     def make_barrier(self):             # <<<<<<<<<<<<<<
@@ -9264,9 +9264,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__34 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
   __Pyx_GIVEREF(__pyx_tuple__34);
-  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_make_barrier, 62, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_make_barrier, 62, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 62, __pyx_L1_error)
 
-  /* "astar.py":65
+  /* "astar_cy.pyx":65
  *         self.color = BLACK
  * 
  *     def make_end(self):             # <<<<<<<<<<<<<<
@@ -9276,9 +9276,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__36 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
   __Pyx_GIVEREF(__pyx_tuple__36);
-  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_make_end, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_make_end, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 65, __pyx_L1_error)
 
-  /* "astar.py":68
+  /* "astar_cy.pyx":68
  *         self.color = TURQUOISE
  * 
  *     def make_path(self):             # <<<<<<<<<<<<<<
@@ -9288,9 +9288,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__38 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
   __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_make_path, 68, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_make_path, 68, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 68, __pyx_L1_error)
 
-  /* "astar.py":71
+  /* "astar_cy.pyx":71
  *         self.color = PURPLE
  * 
  *     def draw(self, win):             # <<<<<<<<<<<<<<
@@ -9300,9 +9300,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__40 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_win); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
   __Pyx_GIVEREF(__pyx_tuple__40);
-  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_draw, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_draw, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 71, __pyx_L1_error)
 
-  /* "astar.py":75
+  /* "astar_cy.pyx":75
  *             win, self.color, (self.x, self.y, self.width, self.width))
  * 
  *     def update_neighbors(self, grid):             # <<<<<<<<<<<<<<
@@ -9312,9 +9312,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__42 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_grid); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
   __Pyx_GIVEREF(__pyx_tuple__42);
-  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_update_neighbors, 75, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_update_neighbors, 75, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 75, __pyx_L1_error)
 
-  /* "astar.py":91
+  /* "astar_cy.pyx":91
  *             self.neighbors.append(grid[self.row][self.col - 1])
  * 
  *     def __lt__(self, other):             # <<<<<<<<<<<<<<
@@ -9324,9 +9324,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__44 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_other); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__44);
   __Pyx_GIVEREF(__pyx_tuple__44);
-  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_lt, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_lt, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 91, __pyx_L1_error)
 
-  /* "astar.py":95
+  /* "astar_cy.pyx":95
  * 
  * 
  * def h(p1, p2):             # <<<<<<<<<<<<<<
@@ -9336,9 +9336,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__46 = PyTuple_Pack(6, __pyx_n_s_p1, __pyx_n_s_p2, __pyx_n_s_x1, __pyx_n_s_y1, __pyx_n_s_x2, __pyx_n_s_y2); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
   __Pyx_GIVEREF(__pyx_tuple__46);
-  __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_h, 95, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_h, 95, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 95, __pyx_L1_error)
 
-  /* "astar.py":101
+  /* "astar_cy.pyx":101
  * 
  * 
  * def reconstruct_path(came_from, current, draw):             # <<<<<<<<<<<<<<
@@ -9348,9 +9348,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__48 = PyTuple_Pack(3, __pyx_n_s_came_from, __pyx_n_s_current, __pyx_n_s_draw); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__48);
   __Pyx_GIVEREF(__pyx_tuple__48);
-  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_reconstruct_path, 101, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_reconstruct_path, 101, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 101, __pyx_L1_error)
 
-  /* "astar.py":108
+  /* "astar_cy.pyx":108
  * 
  * 
  * def algorithm(draw, grid, start, end):             # <<<<<<<<<<<<<<
@@ -9360,9 +9360,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__50 = PyTuple_Pack(18, __pyx_n_s_draw, __pyx_n_s_grid, __pyx_n_s_start, __pyx_n_s_end, __pyx_n_s_count, __pyx_n_s_open_set, __pyx_n_s_came_from, __pyx_n_s_g_score, __pyx_n_s_f_score, __pyx_n_s_open_set_hash, __pyx_n_s_event, __pyx_n_s_current, __pyx_n_s_neighbor, __pyx_n_s_temp_g_score, __pyx_n_s_row, __pyx_n_s_spot, __pyx_n_s_row, __pyx_n_s_spot); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
   __Pyx_GIVEREF(__pyx_tuple__50);
-  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(4, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_algorithm, 108, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(4, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_algorithm, 108, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 108, __pyx_L1_error)
 
-  /* "astar.py":156
+  /* "astar_cy.pyx":156
  * 
  * 
  * def make_grid(rows, width):             # <<<<<<<<<<<<<<
@@ -9372,9 +9372,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__52 = PyTuple_Pack(7, __pyx_n_s_rows, __pyx_n_s_width, __pyx_n_s_grid, __pyx_n_s_gap, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_spot); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__52);
   __Pyx_GIVEREF(__pyx_tuple__52);
-  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_make_grid, 156, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_make_grid, 156, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) __PYX_ERR(0, 156, __pyx_L1_error)
 
-  /* "astar.py":168
+  /* "astar_cy.pyx":168
  * 
  * 
  * def draw_grid(win, rows, width):             # <<<<<<<<<<<<<<
@@ -9384,9 +9384,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__54 = PyTuple_Pack(6, __pyx_n_s_win, __pyx_n_s_rows, __pyx_n_s_width, __pyx_n_s_gap, __pyx_n_s_i, __pyx_n_s_j); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__54);
   __Pyx_GIVEREF(__pyx_tuple__54);
-  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(3, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_draw_grid, 168, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(3, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_draw_grid, 168, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 168, __pyx_L1_error)
 
-  /* "astar.py":176
+  /* "astar_cy.pyx":176
  * 
  * 
  * def draw(win, grid, rows, width):             # <<<<<<<<<<<<<<
@@ -9396,9 +9396,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__56 = PyTuple_Pack(6, __pyx_n_s_win, __pyx_n_s_grid, __pyx_n_s_rows, __pyx_n_s_width, __pyx_n_s_row, __pyx_n_s_spot); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__56);
   __Pyx_GIVEREF(__pyx_tuple__56);
-  __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(4, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_draw, 176, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(4, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_draw, 176, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 176, __pyx_L1_error)
 
-  /* "astar.py":187
+  /* "astar_cy.pyx":187
  * 
  * 
  * def get_clicked_pos(pos, rows, width):             # <<<<<<<<<<<<<<
@@ -9408,9 +9408,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__58 = PyTuple_Pack(8, __pyx_n_s_pos, __pyx_n_s_rows, __pyx_n_s_width, __pyx_n_s_gap, __pyx_n_s_y, __pyx_n_s_x, __pyx_n_s_row, __pyx_n_s_col); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__58);
   __Pyx_GIVEREF(__pyx_tuple__58);
-  __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_get_clicked_pos, 187, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_get_clicked_pos, 187, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 187, __pyx_L1_error)
 
-  /* "astar.py":197
+  /* "astar_cy.pyx":197
  * 
  * 
  * def main(win, width):             # <<<<<<<<<<<<<<
@@ -9420,7 +9420,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__60 = PyTuple_Pack(12, __pyx_n_s_win, __pyx_n_s_width, __pyx_n_s_ROWS, __pyx_n_s_grid, __pyx_n_s_start, __pyx_n_s_end, __pyx_n_s_run, __pyx_n_s_event, __pyx_n_s_pos, __pyx_n_s_row, __pyx_n_s_col, __pyx_n_s_spot); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__60);
   __Pyx_GIVEREF(__pyx_tuple__60);
-  __pyx_codeobj__61 = (PyObject*)__Pyx_PyCode_New(2, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_py, __pyx_n_s_main_2, 197, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__61)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_codeobj__61 = (PyObject*)__Pyx_PyCode_New(2, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_astar_cy_pyx, __pyx_n_s_main_2, 197, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__61)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -9483,14 +9483,14 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_5astar___pyx_scope_struct__main) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_8astar_cy___pyx_scope_struct__main) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_5astar___pyx_scope_struct__main.tp_print = 0;
+  __pyx_type_8astar_cy___pyx_scope_struct__main.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_5astar___pyx_scope_struct__main.tp_dictoffset && __pyx_type_5astar___pyx_scope_struct__main.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_5astar___pyx_scope_struct__main.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_8astar_cy___pyx_scope_struct__main.tp_dictoffset && __pyx_type_8astar_cy___pyx_scope_struct__main.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_8astar_cy___pyx_scope_struct__main.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
-  __pyx_ptype_5astar___pyx_scope_struct__main = &__pyx_type_5astar___pyx_scope_struct__main;
+  __pyx_ptype_8astar_cy___pyx_scope_struct__main = &__pyx_type_8astar_cy___pyx_scope_struct__main;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -9541,11 +9541,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initastar(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initastar(void)
+__Pyx_PyMODINIT_FUNC initastar_cy(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initastar_cy(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_astar(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_astar(void)
+__Pyx_PyMODINIT_FUNC PyInit_astar_cy(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_astar_cy(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -9612,7 +9612,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_astar(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_astar_cy(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -9627,7 +9627,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_astar(PyObject *__pyx_pyinit_modul
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'astar' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'astar_cy' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -9642,7 +9642,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_astar(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_astar_cy(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -9681,7 +9681,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("astar", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("astar_cy", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -9699,14 +9699,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_astar) {
+  if (__pyx_module_is_main_astar_cy) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "astar")) {
-      if (unlikely(PyDict_SetItemString(modules, "astar", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "astar_cy")) {
+      if (unlikely(PyDict_SetItemString(modules, "astar_cy", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -9727,7 +9727,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "astar.py":1
+  /* "astar_cy.pyx":1
  * import pygame             # <<<<<<<<<<<<<<
  * import math
  * from queue import PriorityQueue
@@ -9737,7 +9737,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pygame, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":2
+  /* "astar_cy.pyx":2
  * import pygame
  * import math             # <<<<<<<<<<<<<<
  * from queue import PriorityQueue
@@ -9748,7 +9748,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_math, __pyx_t_1) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "astar.py":3
+  /* "astar_cy.pyx":3
  * import pygame
  * import math
  * from queue import PriorityQueue             # <<<<<<<<<<<<<<
@@ -9769,7 +9769,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "astar.py":5
+  /* "astar_cy.pyx":5
  * from queue import PriorityQueue
  * 
  * WIDTH = 600             # <<<<<<<<<<<<<<
@@ -9778,7 +9778,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_WIDTH, __pyx_int_600) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
 
-  /* "astar.py":6
+  /* "astar_cy.pyx":6
  * 
  * WIDTH = 600
  * WIN = pygame.display.set_mode((WIDTH, WIDTH))             # <<<<<<<<<<<<<<
@@ -9812,7 +9812,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_WIN, __pyx_t_3) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":7
+  /* "astar_cy.pyx":7
  * WIDTH = 600
  * WIN = pygame.display.set_mode((WIDTH, WIDTH))
  * pygame.display.set_caption("A* Path Finding Algorithm")             # <<<<<<<<<<<<<<
@@ -9832,7 +9832,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":9
+  /* "astar_cy.pyx":9
  * pygame.display.set_caption("A* Path Finding Algorithm")
  * 
  * RED = (255, 0, 0)             # <<<<<<<<<<<<<<
@@ -9841,7 +9841,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_RED, __pyx_tuple__2) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
 
-  /* "astar.py":10
+  /* "astar_cy.pyx":10
  * 
  * RED = (255, 0, 0)
  * GREEN = (0, 255, 0)             # <<<<<<<<<<<<<<
@@ -9850,7 +9850,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_GREEN, __pyx_tuple__3) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
 
-  /* "astar.py":11
+  /* "astar_cy.pyx":11
  * RED = (255, 0, 0)
  * GREEN = (0, 255, 0)
  * BLUE = (0, 0, 255)             # <<<<<<<<<<<<<<
@@ -9859,7 +9859,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_BLUE, __pyx_tuple__4) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
 
-  /* "astar.py":12
+  /* "astar_cy.pyx":12
  * GREEN = (0, 255, 0)
  * BLUE = (0, 0, 255)
  * YELLOW = (255, 255, 0)             # <<<<<<<<<<<<<<
@@ -9868,7 +9868,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_YELLOW, __pyx_tuple__5) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
 
-  /* "astar.py":13
+  /* "astar_cy.pyx":13
  * BLUE = (0, 0, 255)
  * YELLOW = (255, 255, 0)
  * WHITE = (255, 255, 255)             # <<<<<<<<<<<<<<
@@ -9877,7 +9877,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_WHITE, __pyx_tuple__6) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
 
-  /* "astar.py":14
+  /* "astar_cy.pyx":14
  * YELLOW = (255, 255, 0)
  * WHITE = (255, 255, 255)
  * BLACK = (0, 0, 0)             # <<<<<<<<<<<<<<
@@ -9886,7 +9886,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_BLACK, __pyx_tuple__7) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
 
-  /* "astar.py":15
+  /* "astar_cy.pyx":15
  * WHITE = (255, 255, 255)
  * BLACK = (0, 0, 0)
  * PURPLE = (128, 0, 128)             # <<<<<<<<<<<<<<
@@ -9895,7 +9895,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_PURPLE, __pyx_tuple__8) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
 
-  /* "astar.py":16
+  /* "astar_cy.pyx":16
  * BLACK = (0, 0, 0)
  * PURPLE = (128, 0, 128)
  * ORANGE = (255, 165, 0)             # <<<<<<<<<<<<<<
@@ -9904,7 +9904,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_ORANGE, __pyx_tuple__9) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
 
-  /* "astar.py":17
+  /* "astar_cy.pyx":17
  * PURPLE = (128, 0, 128)
  * ORANGE = (255, 165, 0)
  * GREY = (128, 128, 128)             # <<<<<<<<<<<<<<
@@ -9913,7 +9913,7 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_GREY, __pyx_tuple__10) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
 
-  /* "astar.py":18
+  /* "astar_cy.pyx":18
  * ORANGE = (255, 165, 0)
  * GREY = (128, 128, 128)
  * TURQUOISE = (64, 224, 208)             # <<<<<<<<<<<<<<
@@ -9922,221 +9922,221 @@ if (!__Pyx_RefNanny) {
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_TURQUOISE, __pyx_tuple__11) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
 
-  /* "astar.py":21
+  /* "astar_cy.pyx":21
  * 
  * 
  * class Spot:             # <<<<<<<<<<<<<<
  *     def __init__(self, row, col, width, total_rows):
  *         self.row = row
  */
-  __pyx_t_4 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Spot, __pyx_n_s_Spot, (PyObject *) NULL, __pyx_n_s_astar, (PyObject *) NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Spot, __pyx_n_s_Spot, (PyObject *) NULL, __pyx_n_s_astar_cy, (PyObject *) NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "astar.py":22
+  /* "astar_cy.pyx":22
  * 
  * class Spot:
  *     def __init__(self, row, col, width, total_rows):             # <<<<<<<<<<<<<<
  *         self.row = row
  *         self.col = col
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_1__init__, 0, __pyx_n_s_Spot___init, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_1__init__, 0, __pyx_n_s_Spot___init, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_init, __pyx_t_3) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":32
+  /* "astar_cy.pyx":32
  *         self.total_rows = total_rows
  * 
  *     def get_pos(self):             # <<<<<<<<<<<<<<
  *         return self.row, self.col
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_3get_pos, 0, __pyx_n_s_Spot_get_pos, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_3get_pos, 0, __pyx_n_s_Spot_get_pos, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_get_pos, __pyx_t_3) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":35
+  /* "astar_cy.pyx":35
  *         return self.row, self.col
  * 
  *     def is_closed(self):             # <<<<<<<<<<<<<<
  *         return self.color == RED
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_5is_closed, 0, __pyx_n_s_Spot_is_closed, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_5is_closed, 0, __pyx_n_s_Spot_is_closed, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_is_closed, __pyx_t_3) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":38
+  /* "astar_cy.pyx":38
  *         return self.color == RED
  * 
  *     def is_open(self):             # <<<<<<<<<<<<<<
  *         return self.color == GREEN
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_7is_open, 0, __pyx_n_s_Spot_is_open, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_7is_open, 0, __pyx_n_s_Spot_is_open, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_is_open, __pyx_t_3) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":41
+  /* "astar_cy.pyx":41
  *         return self.color == GREEN
  * 
  *     def is_barrier(self):             # <<<<<<<<<<<<<<
  *         return self.color == BLACK
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_9is_barrier, 0, __pyx_n_s_Spot_is_barrier, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_9is_barrier, 0, __pyx_n_s_Spot_is_barrier, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_is_barrier, __pyx_t_3) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":44
+  /* "astar_cy.pyx":44
  *         return self.color == BLACK
  * 
  *     def is_start(self):             # <<<<<<<<<<<<<<
  *         return self.color == ORANGE
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_11is_start, 0, __pyx_n_s_Spot_is_start, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_11is_start, 0, __pyx_n_s_Spot_is_start, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_is_start, __pyx_t_3) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":47
+  /* "astar_cy.pyx":47
  *         return self.color == ORANGE
  * 
  *     def is_end(self):             # <<<<<<<<<<<<<<
  *         return self.color == TURQUOISE
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_13is_end, 0, __pyx_n_s_Spot_is_end, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_13is_end, 0, __pyx_n_s_Spot_is_end, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_is_end, __pyx_t_3) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":50
+  /* "astar_cy.pyx":50
  *         return self.color == TURQUOISE
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
  *         self.color = WHITE
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_15reset, 0, __pyx_n_s_Spot_reset, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_15reset, 0, __pyx_n_s_Spot_reset, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_reset, __pyx_t_3) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":53
+  /* "astar_cy.pyx":53
  *         self.color = WHITE
  * 
  *     def make_start(self):             # <<<<<<<<<<<<<<
  *         self.color = ORANGE
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_17make_start, 0, __pyx_n_s_Spot_make_start, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_17make_start, 0, __pyx_n_s_Spot_make_start, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_make_start, __pyx_t_3) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":56
+  /* "astar_cy.pyx":56
  *         self.color = ORANGE
  * 
  *     def make_closed(self):             # <<<<<<<<<<<<<<
  *         self.color = RED
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_19make_closed, 0, __pyx_n_s_Spot_make_closed, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_19make_closed, 0, __pyx_n_s_Spot_make_closed, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_make_closed, __pyx_t_3) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":59
+  /* "astar_cy.pyx":59
  *         self.color = RED
  * 
  *     def make_open(self):             # <<<<<<<<<<<<<<
  *         self.color = GREEN
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_21make_open, 0, __pyx_n_s_Spot_make_open, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_21make_open, 0, __pyx_n_s_Spot_make_open, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_make_open, __pyx_t_3) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":62
+  /* "astar_cy.pyx":62
  *         self.color = GREEN
  * 
  *     def make_barrier(self):             # <<<<<<<<<<<<<<
  *         self.color = BLACK
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_23make_barrier, 0, __pyx_n_s_Spot_make_barrier, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_23make_barrier, 0, __pyx_n_s_Spot_make_barrier, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_make_barrier, __pyx_t_3) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":65
+  /* "astar_cy.pyx":65
  *         self.color = BLACK
  * 
  *     def make_end(self):             # <<<<<<<<<<<<<<
  *         self.color = TURQUOISE
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_25make_end, 0, __pyx_n_s_Spot_make_end, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_25make_end, 0, __pyx_n_s_Spot_make_end, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_make_end, __pyx_t_3) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":68
+  /* "astar_cy.pyx":68
  *         self.color = TURQUOISE
  * 
  *     def make_path(self):             # <<<<<<<<<<<<<<
  *         self.color = PURPLE
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_27make_path, 0, __pyx_n_s_Spot_make_path, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_27make_path, 0, __pyx_n_s_Spot_make_path, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_make_path, __pyx_t_3) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":71
+  /* "astar_cy.pyx":71
  *         self.color = PURPLE
  * 
  *     def draw(self, win):             # <<<<<<<<<<<<<<
  *         pygame.draw.rect(
  *             win, self.color, (self.x, self.y, self.width, self.width))
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_29draw, 0, __pyx_n_s_Spot_draw, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_29draw, 0, __pyx_n_s_Spot_draw, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_draw, __pyx_t_3) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":75
+  /* "astar_cy.pyx":75
  *             win, self.color, (self.x, self.y, self.width, self.width))
  * 
  *     def update_neighbors(self, grid):             # <<<<<<<<<<<<<<
  *         self.neighbors = []
  *         # DOWN
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_31update_neighbors, 0, __pyx_n_s_Spot_update_neighbors, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_31update_neighbors, 0, __pyx_n_s_Spot_update_neighbors, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_update_neighbors, __pyx_t_3) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":91
+  /* "astar_cy.pyx":91
  *             self.neighbors.append(grid[self.row][self.col - 1])
  * 
  *     def __lt__(self, other):             # <<<<<<<<<<<<<<
  *         return False
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_4Spot_33__lt__, 0, __pyx_n_s_Spot___lt, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__45)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8astar_cy_4Spot_33__lt__, 0, __pyx_n_s_Spot___lt, NULL, __pyx_n_s_astar_cy, __pyx_d, ((PyObject *)__pyx_codeobj__45)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_lt, __pyx_t_3) < 0) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "astar.py":21
+  /* "astar_cy.pyx":21
  * 
  * 
  * class Spot:             # <<<<<<<<<<<<<<
@@ -10149,103 +10149,103 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":95
+  /* "astar_cy.pyx":95
  * 
  * 
  * def h(p1, p2):             # <<<<<<<<<<<<<<
  *     x1, y1 = p1
  *     x2, y2 = p2
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_1h, 0, __pyx_n_s_h, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__47)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_1h, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_h, __pyx_t_4) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":101
+  /* "astar_cy.pyx":101
  * 
  * 
  * def reconstruct_path(came_from, current, draw):             # <<<<<<<<<<<<<<
  *     while current in came_from:
  *         current = came_from[current]
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_3reconstruct_path, 0, __pyx_n_s_reconstruct_path, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__49)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_3reconstruct_path, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_reconstruct_path, __pyx_t_4) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":108
+  /* "astar_cy.pyx":108
  * 
  * 
  * def algorithm(draw, grid, start, end):             # <<<<<<<<<<<<<<
  *     count = 0
  *     open_set = PriorityQueue()
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_5algorithm, 0, __pyx_n_s_algorithm, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__51)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_5algorithm, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_algorithm, __pyx_t_4) < 0) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":156
+  /* "astar_cy.pyx":156
  * 
  * 
  * def make_grid(rows, width):             # <<<<<<<<<<<<<<
  *     grid = []
  *     gap = width // rows
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_7make_grid, 0, __pyx_n_s_make_grid, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__53)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_7make_grid, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_make_grid, __pyx_t_4) < 0) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":168
+  /* "astar_cy.pyx":168
  * 
  * 
  * def draw_grid(win, rows, width):             # <<<<<<<<<<<<<<
  *     gap = width // rows
  *     for i in range(rows):
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_9draw_grid, 0, __pyx_n_s_draw_grid, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__55)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_9draw_grid, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_draw_grid, __pyx_t_4) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":176
+  /* "astar_cy.pyx":176
  * 
  * 
  * def draw(win, grid, rows, width):             # <<<<<<<<<<<<<<
  *     win.fill(WHITE)
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_11draw, 0, __pyx_n_s_draw, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__57)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_11draw, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_draw, __pyx_t_4) < 0) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":187
+  /* "astar_cy.pyx":187
  * 
  * 
  * def get_clicked_pos(pos, rows, width):             # <<<<<<<<<<<<<<
  *     gap = width // rows
  *     y, x = pos
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_13get_clicked_pos, 0, __pyx_n_s_get_clicked_pos, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__59)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_13get_clicked_pos, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_get_clicked_pos, __pyx_t_4) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":197
+  /* "astar_cy.pyx":197
  * 
  * 
  * def main(win, width):             # <<<<<<<<<<<<<<
  *     ROWS = 30
  *     grid = make_grid(ROWS, width)
  */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_5astar_15main, 0, __pyx_n_s_main_2, NULL, __pyx_n_s_astar, __pyx_d, ((PyObject *)__pyx_codeobj__61)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_t_4 = PyCFunction_NewEx(&__pyx_mdef_8astar_cy_15main, NULL, __pyx_n_s_astar_cy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_main_2, __pyx_t_4) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "astar.py":253
+  /* "astar_cy.pyx":253
  * 
  * 
  * main(WIN, WIDTH)             # <<<<<<<<<<<<<<
@@ -10270,7 +10270,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "astar.py":1
+  /* "astar_cy.pyx":1
  * import pygame             # <<<<<<<<<<<<<<
  * import math
  * from queue import PriorityQueue
@@ -10290,11 +10290,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_4);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init astar", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init astar_cy", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init astar");
+    PyErr_SetString(PyExc_ImportError, "init astar_cy");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
