@@ -1,10 +1,7 @@
-from distutils.core import setup
-import py2exe
+from setuptools import setup
+from Cython.Build import cythonize
 
-setup(
-    name='Astar',
-    version='0.1dev',
-    packages=['astar', ],
-    license='TechWithTim',
-    long_description=open('README.txt').read(),
-)
+setup(name='Astar',
+      ext_modules=(cythonize("astar.pyx")),
+      zip_safe=False
+      )
